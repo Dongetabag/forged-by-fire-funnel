@@ -206,12 +206,12 @@ export default function Footer() {
             </p>
           </div>
           <a
-            href="https://madebyrecipe.com"
+            href="https://elevenviews.io"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[11px] text-[#1A1A1A]/25 hover:text-[#1A1A1A]/55 transition-colors duration-300"
           >
-            Built by Recipe Labs
+            Designed by Eleven Views
           </a>
         </div>
       </div>
