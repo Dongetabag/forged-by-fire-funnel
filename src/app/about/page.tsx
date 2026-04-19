@@ -31,7 +31,7 @@ const timeline = [
   { year: "2015", title: "Firefighter since day one", desc: "Lt. Donald Coleman Jr. joined the Springfield Fire Department, dedicating his career to protecting others in their most vulnerable moments." },
   { year: "2019", title: "First fire in the family", desc: "Donald's grandparents' home. a symbol of family legacy. suffered a fire, though it had stood vacant for years." },
   { year: "2022", title: "His own home is lost", desc: "While on vacation, Donald's home in Springfield, MA was destroyed by a fire. He returned to a total loss. A lifetime of belongings reduced to ashes." },
-  { year: "2022–2024", title: "Two and a half years of restoration", desc: "Donald rebuilt his grandparents' home. navigating setbacks, financial strain, and the emotional weight of reconstructing stability itself." },
+  { year: "2022 to 2024", title: "Two and a half years of restoration", desc: "Donald rebuilt his grandparents' home. navigating setbacks, financial strain, and the emotional weight of reconstructing stability itself." },
   { year: "2024", title: "Forged By Fire is born", desc: "Out of that restoration came a new vision: the home wouldn't just be for himself. It would be a vessel for good, a place to support families walking the same road." },
 ];
 

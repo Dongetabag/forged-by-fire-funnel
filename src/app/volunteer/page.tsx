@@ -15,7 +15,7 @@ const volunteerPaths = [
   {
     icon: Package,
     title: "Sort & Package Donations",
-    time: "2–4 hours / month",
+    time: "2 to 4 hours / month",
     desc: "We receive clothing and essentials constantly. Volunteers help sort, size, and package items into family-ready kits in our transitional housing unit.",
   },
   {

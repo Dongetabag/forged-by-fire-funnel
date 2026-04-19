@@ -31,7 +31,7 @@ const sections = [
 • A brief description of the reason for the refund request
 • Your name and contact information
 
-We acknowledge refund requests within 2 business days. Approved refunds typically process within 5–10 business days, depending on the original payment method and processor timing.`,
+We acknowledge refund requests within 2 business days. Approved refunds typically process within 5 to 10 business days, depending on the original payment method and processor timing.`,
   },
   {
     heading: "Requests After 30 Days",
