@@ -146,21 +146,35 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-[#1A1A1A]/8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="text-[11px] text-[#1A1A1A]/35 text-center sm:text-left">
+        <div className="border-t border-[#1A1A1A]/8 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="text-[11px] text-[#1A1A1A]/35 text-center md:text-left">
             <p>&copy; {year} Forged By Fire. All rights reserved.</p>
             <p className="mt-1 text-[10px] text-[#1A1A1A]/25">
               501(c)(3) pending. Donations may become tax-deductible once status is confirmed.
             </p>
           </div>
-          <a
-            href="https://madebyrecipe.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[11px] text-[#1A1A1A]/25 hover:text-[#1A1A1A]/55 transition-colors duration-300"
-          >
-            Built by Recipe Labs
-          </a>
+          <div className="flex items-center gap-5">
+            <a
+              href="/privacy"
+              className="text-[11px] text-[#1A1A1A]/40 hover:text-[#1A1A1A]/70 transition-colors duration-300"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="/terms"
+              className="text-[11px] text-[#1A1A1A]/40 hover:text-[#1A1A1A]/70 transition-colors duration-300"
+            >
+              Terms of Service
+            </a>
+            <a
+              href="https://madebyrecipe.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[11px] text-[#1A1A1A]/25 hover:text-[#1A1A1A]/55 transition-colors duration-300"
+            >
+              Built by Recipe Labs
+            </a>
+          </div>
         </div>
       </div>
     </footer>
