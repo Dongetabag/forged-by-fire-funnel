@@ -166,11 +166,11 @@ export default function ServicesPage() {
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
               <div>
                 <div className="img-card aspect-[4/5] relative mb-4">
-                  <Image src="/images/family-moving-in.jpg" alt="Family moving into transitional housing" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+                  <Image src="/images/family-moving-in.jpg" alt="Family moving into transitional housing" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover object-top" />
                 </div>
                 <div className="grid grid-cols-2 gap-3">
                   <div className="img-card aspect-[4/3] relative">
-                    <Image src="/images/family-kitchen.jpg" alt="Family thriving in transitional housing" fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" />
+                    <Image src="/images/family-kitchen.jpg" alt="Family thriving in transitional housing" fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover object-top" />
                   </div>
                   <div className="img-card aspect-[4/3] relative">
                     <Image src="/images/restored-home-golden.jpg" alt="Restored home at golden hour" fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" />

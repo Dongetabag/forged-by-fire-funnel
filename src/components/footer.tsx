@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight, Heart, MapPin } from "lucide-react";
+import { Heart, MapPin, Mail } from "lucide-react";
 import Image from "next/image";
 
 const servicesLinks = [
@@ -19,21 +19,38 @@ const involvedLinks = [
 
 const orgLinks = [
   { label: "Our Story", href: "/about" },
-  { label: "Founder's Message", href: "/about" },
+  { label: "Leadership & Board", href: "/leadership" },
+  { label: "Financials", href: "/financials" },
+  { label: "Annual Report", href: "/annual-report" },
+  { label: "Press & Media Kit", href: "/press" },
+];
+
+const resourcesLinks = [
+  { label: "FAQ", href: "/faq" },
+  { label: "News & Updates", href: "/news" },
   { label: "Who We Help", href: "/who-we-help" },
-  { label: "Contact", href: "/contact" },
+  { label: "Contact Us", href: "/contact" },
+];
+
+const legalLinks = [
+  { label: "Privacy Policy", href: "/privacy" },
+  { label: "Terms of Service", href: "/terms" },
+  { label: "Accessibility", href: "/accessibility" },
+  { label: "Nondiscrimination", href: "/nondiscrimination" },
+  { label: "Donor Bill of Rights", href: "/donor-rights" },
+  { label: "Refund Policy", href: "/refund-policy" },
 ];
 
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative pt-16 pb-8 bg-[#F5F0EA]">
+    <footer className="relative pt-16 pb-8 bg-[#F5F0EA]" role="contentinfo">
       <div className="section-divider mb-16" />
       <div className="container-tight">
-        <div className="grid md:grid-cols-4 gap-12 mb-16">
+        <div className="grid md:grid-cols-6 gap-10 md:gap-8 mb-14">
           {/* Brand */}
-          <div className="md:col-span-1">
+          <div className="md:col-span-2">
             <div className="flex items-center gap-2.5 mb-4">
               <Image
                 src="/fbf-logo.png"
@@ -46,22 +63,30 @@ export default function Footer() {
                 Forged By Fire
               </h3>
             </div>
-            <p className="text-[13px] text-[#1A1A1A]/55 leading-relaxed mb-5">
-              Emergency resources and transitional housing for Springfield families
-              affected by house fires. Every little bit counts.
+            <p className="text-[13px] text-[#1A1A1A]/55 leading-relaxed mb-5 max-w-xs">
+              Emergency resources and transitional housing for Springfield, MA
+              families after house fires. Firefighter-founded, community-accountable.
+              Every little bit counts.
             </p>
-            <div className="flex items-center gap-1.5 text-[11px] text-[#1A1A1A]/45">
+            <div className="flex items-center gap-1.5 text-[11px] text-[#1A1A1A]/45 mb-2">
               <MapPin size={11} />
               <span>Springfield, Massachusetts</span>
             </div>
+            <a
+              href="mailto:contact@forgedbyfire.org"
+              className="flex items-center gap-1.5 text-[11px] text-[#1A1A1A]/45 hover:text-[#E85D23] transition-colors"
+            >
+              <Mail size={11} />
+              <span>contact@forgedbyfire.org</span>
+            </a>
             <p className="text-[10px] text-[#1A1A1A]/30 mt-3 uppercase tracking-widest">
-              Est. 2015
+              Est. 2015 · 501(c)(3) Pending
             </p>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="text-[10px] uppercase tracking-widest text-[#1A1A1A]/42 mb-4">
+            <h4 className="text-[10px] uppercase tracking-widest text-[#1A1A1A]/42 mb-4 font-semibold">
               Services
             </h4>
             <ul className="space-y-2.5">
@@ -80,7 +105,7 @@ export default function Footer() {
 
           {/* Get Involved */}
           <div>
-            <h4 className="text-[10px] uppercase tracking-widest text-[#1A1A1A]/42 mb-4">
+            <h4 className="text-[10px] uppercase tracking-widest text-[#1A1A1A]/42 mb-4 font-semibold">
               Get Involved
             </h4>
             <ul className="space-y-2.5">
@@ -99,7 +124,7 @@ export default function Footer() {
 
           {/* Organization */}
           <div>
-            <h4 className="text-[10px] uppercase tracking-widest text-[#1A1A1A]/42 mb-4">
+            <h4 className="text-[10px] uppercase tracking-widest text-[#1A1A1A]/42 mb-4 font-semibold">
               Organization
             </h4>
             <ul className="space-y-2.5">
@@ -113,15 +138,25 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
-              <li className="pt-2">
-                <a
-                  href="/contact"
-                  className="group inline-flex items-center gap-1 text-[13px] text-[#1A1A1A]/55 hover:text-[#E85D23] transition-colors duration-300"
-                >
-                  Contact Us
-                  <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                </a>
-              </li>
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <h4 className="text-[10px] uppercase tracking-widest text-[#1A1A1A]/42 mb-4 font-semibold">
+              Resources
+            </h4>
+            <ul className="space-y-2.5">
+              {resourcesLinks.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-[13px] text-[#1A1A1A]/55 hover:text-[#E85D23] transition-colors duration-300"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -145,36 +180,39 @@ export default function Footer() {
           </a>
         </div>
 
+        {/* Legal row */}
+        <div className="border-t border-[#1A1A1A]/8 pt-6 pb-4">
+          <ul className="flex flex-wrap items-center justify-center md:justify-start gap-x-5 gap-y-2">
+            {legalLinks.map((link) => (
+              <li key={link.label}>
+                <a
+                  href={link.href}
+                  className="text-[11px] text-[#1A1A1A]/45 hover:text-[#1A1A1A]/80 transition-colors duration-300"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         {/* Bottom bar */}
-        <div className="border-t border-[#1A1A1A]/8 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="pt-4 flex flex-col md:flex-row items-center justify-between gap-3">
           <div className="text-[11px] text-[#1A1A1A]/35 text-center md:text-left">
             <p>&copy; {year} Forged By Fire. All rights reserved.</p>
             <p className="mt-1 text-[10px] text-[#1A1A1A]/25">
-              501(c)(3) pending. Donations may become tax-deductible once status is confirmed.
+              Forged By Fire&apos;s 501(c)(3) status is pending. Donations may
+              become tax-deductible once status is formally confirmed.
             </p>
           </div>
-          <div className="flex items-center gap-5">
-            <a
-              href="/privacy"
-              className="text-[11px] text-[#1A1A1A]/40 hover:text-[#1A1A1A]/70 transition-colors duration-300"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="/terms"
-              className="text-[11px] text-[#1A1A1A]/40 hover:text-[#1A1A1A]/70 transition-colors duration-300"
-            >
-              Terms of Service
-            </a>
-            <a
-              href="https://madebyrecipe.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[11px] text-[#1A1A1A]/25 hover:text-[#1A1A1A]/55 transition-colors duration-300"
-            >
-              Built by Recipe Labs
-            </a>
-          </div>
+          <a
+            href="https://madebyrecipe.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[11px] text-[#1A1A1A]/25 hover:text-[#1A1A1A]/55 transition-colors duration-300"
+          >
+            Built by Recipe Labs
+          </a>
         </div>
       </div>
     </footer>

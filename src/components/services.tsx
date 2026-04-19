@@ -87,14 +87,14 @@ export default function Services() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="group card-light overflow-hidden flex flex-col"
             >
-              {/* Image */}
-              <div className="img-card aspect-[16/10] relative">
+              {/* Image — taller aspect + top-anchored so faces stay in frame */}
+              <div className="img-card aspect-[4/3] relative">
                 <Image
                   src={pillar.image}
                   alt={pillar.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
                 <div className="absolute top-4 left-4 flex items-center gap-2">

@@ -151,7 +151,7 @@ export default function VolunteerPage() {
                 </p>
               </div>
               <div className="img-card aspect-[4/3] relative">
-                <Image src="/images/community-helping.jpg" alt="Community members helping after a fire" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+                <Image src="/images/community-helping.jpg" alt="Community members helping after a fire" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover object-top" />
               </div>
             </div>
           </div>

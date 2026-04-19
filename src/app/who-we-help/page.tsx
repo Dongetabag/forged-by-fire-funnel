@@ -98,13 +98,13 @@ export default function WhoWeHelpPage() {
             <div className="grid md:grid-cols-2 gap-5">
               {groups.map((g) => (
                 <div key={g.name} className="card-light overflow-hidden group">
-                  <div className="relative aspect-[16/10] img-card">
+                  <div className="relative aspect-[4/3] img-card">
                     <Image
                       src={g.image}
                       alt={g.name}
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover"
+                      className="object-cover object-top"
                     />
                     <div className="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#1A1A1A]/80 backdrop-blur-sm rounded-full">
                       <g.icon size={13} className="text-[#F59E0B]" />

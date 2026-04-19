@@ -84,13 +84,13 @@ export default function WhoWeHelp() {
               transition={{ duration: 0.5, delay: i * 0.07 }}
               className="card-light overflow-hidden group"
             >
-              <div className="img-card aspect-[16/10] relative">
+              <div className="img-card aspect-[4/3] relative">
                 <Image
                   src={g.image}
                   alt={g.name}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 <div className="absolute top-3 left-3 inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#1A1A1A]/80 backdrop-blur-sm rounded-full">
