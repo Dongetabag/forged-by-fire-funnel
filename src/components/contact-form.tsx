@@ -9,7 +9,7 @@ const paths = [
     iconColor: "text-[#E85D23]",
     iconBg: "bg-[#E85D23]/12",
     title: "I Need Help After a Fire",
-    desc: "If you or someone you know in Springfield lost a home to fire, we respond within 24 hours — same-day for active emergencies.",
+    desc: "If you or someone you know in Springfield lost a home to fire, we respond within 24 hours, same-day for active emergencies.",
     cta: "Get Emergency Support",
     message: "I need emergency help after a house fire in Springfield",
     ctaColor: "bg-[#E85D23] hover:bg-[#C84914] text-white",
@@ -19,7 +19,7 @@ const paths = [
     iconColor: "text-[#9B2F0A]",
     iconBg: "bg-[#E85D23]/10",
     title: "I Want to Donate",
-    desc: "Financial gifts or item donations. 100% of donations go directly to supporting families — every little bit counts.",
+    desc: "Financial gifts or item donations. 100% of donations go directly to supporting families, every little bit counts.",
     cta: "Make a Donation",
     message: "I'd like to donate to Forged By Fire",
     ctaColor: "bg-[#1A1A1A] hover:bg-[#2A1B12] text-white",
@@ -52,7 +52,7 @@ export default function ContactForm() {
             GET IN TOUCH
           </p>
           <h2 className="text-[28px] md:text-[36px] font-normal tracking-tight mb-4 text-[#1A1A1A]">
-            How can we help you — or how can you help us?
+            How can we help you. or how can you help us?
           </h2>
           <p className="text-[15px] text-[#1A1A1A]/55 max-w-lg mx-auto">
             Whatever brought you here, there&apos;s a path forward. Choose the one
@@ -123,7 +123,7 @@ export default function ContactForm() {
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-widest text-[#1A1A1A]/45 mb-0.5">
-                Phone — Coming Soon
+                Phone. Coming Soon
               </p>
               <span className="text-[13px] font-medium text-[#1A1A1A]/55">
                 Direct line launching with our formal nonprofit setup

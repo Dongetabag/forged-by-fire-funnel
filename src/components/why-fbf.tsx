@@ -12,7 +12,7 @@ const pillars = [
   },
   {
     icon: Clock,
-    title: "Within 48 hours — not weeks",
+    title: "Within 48 hours, not weeks",
     description:
       "Most relief programs require applications, verification, and waiting. We deliver emergency support within 48 hours of the fire because that's when it matters most.",
   },
@@ -20,7 +20,7 @@ const pillars = [
     icon: HandHeart,
     title: "100% to families",
     description:
-      "Every dollar donated goes directly to the families we serve. Operations are covered separately. Every little bit counts — and every little bit actually reaches someone in crisis.",
+      "Every dollar donated goes directly to the families we serve. Operations are covered separately. Every little bit counts, and every little bit actually reaches someone in crisis.",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function WhyFbf() {
             <p className="text-[15px] text-[#1A1A1A]/60 leading-relaxed mb-5">
               Forged By Fire is a Springfield, MA nonprofit built on a single idea:
               no family should have to rebuild alone. We exist because our founder
-              lived through the exact moment we help families navigate — and knows
+              lived through the exact moment we help families navigate, and knows
               how fragile those first 48 hours are.
             </p>
             <p className="text-[15px] text-[#1A1A1A]/60 leading-relaxed mb-8">
@@ -58,12 +58,12 @@ export default function WhyFbf() {
 
             <div className="border-l-2 border-[#E85D23]/50 pl-6 mb-8">
               <p className="text-lg text-[#1A1A1A]/72 italic leading-relaxed">
-                &ldquo;When you lose everything — all your clothes, your sneakers,
-                your socks — anything you can get is a blessing. Every little bit
+                &ldquo;When you lose everything: all your clothes, your sneakers,
+                your socks. Anything you can get is a blessing. Every little bit
                 counts.&rdquo;
               </p>
               <p className="text-[12px] text-[#1A1A1A]/45 mt-2 uppercase tracking-widest">
-                — Lt. Donald Coleman Jr., Founder
+                Lt. Donald Coleman Jr., Founder
               </p>
             </div>
 

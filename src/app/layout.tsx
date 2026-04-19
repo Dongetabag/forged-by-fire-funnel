@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: "Forged By Fire | Springfield, MA Fire Relief Nonprofit",
-    template: "%s | Forged By Fire — Springfield, MA",
+    template: "%s | Forged By Fire. Springfield, MA",
   },
   description:
     "Forged By Fire is a Springfield, Massachusetts nonprofit founded by firefighter Lt. Donald Coleman Jr. We deliver emergency support and transitional housing to Springfield families within 48 hours of a house fire. Every little bit counts.",
@@ -107,7 +107,7 @@ export const viewport: Viewport = {
   themeColor: "#1A1A1A",
 };
 
-// Structured data — NGO, LocalBusiness, Person (founder), WebSite
+// Structured data. NGO, LocalBusiness, Person (founder), WebSite
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [

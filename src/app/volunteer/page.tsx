@@ -22,7 +22,7 @@ const volunteerPaths = [
     icon: Truck,
     title: "Deliver Support Packages",
     time: "1 delivery per call",
-    desc: "When a Springfield family needs a package, a volunteer helps deliver it — often the first human contact after the fire. Warm, respectful, practical.",
+    desc: "When a Springfield family needs a package, a volunteer helps deliver it, often the first human contact after the fire. Warm, respectful, practical.",
   },
   {
     icon: Megaphone,
@@ -76,7 +76,7 @@ export default function VolunteerPage() {
           label="Volunteer"
           title="Springfield takes care of"
           highlight="its own."
-          subtitle="Forged By Fire runs on community. Donations fund the packages — volunteers are how they actually reach families."
+          subtitle="Forged By Fire runs on community. Donations fund the packages. volunteers are how they actually reach families."
           image="/images/community-cleanup.jpg"
           imageAlt="Volunteers helping a family clean up after a fire"
         />
@@ -93,7 +93,7 @@ export default function VolunteerPage() {
               </h2>
               <p className="text-[14px] text-[#1A1A1A]/55 leading-relaxed mt-4 max-w-xl mx-auto">
                 Whether you have two hours a month or a highly specialized
-                skill — there&apos;s a way you can help.
+                skill. there&apos;s a way you can help.
               </p>
             </div>
 
@@ -214,7 +214,7 @@ export default function VolunteerPage() {
                     <textarea
                       name="message"
                       rows={4}
-                      placeholder="Tell us about your availability, skills, or what you're drawn to — sorting donations, deliveries, skills-based work, etc."
+                      placeholder="Tell us about your availability, skills, or what you're drawn to. sorting donations, deliveries, skills-based work, etc."
                       className={`${inputClass} resize-none`}
                     />
                   </div>

@@ -43,7 +43,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#F5F0EA]/92 backdrop-blur-md border-b border-[#1A1A1A]/6">
       <nav className="container-tight">
         <div className="flex items-center justify-between h-[80px]">
-          {/* Left — Logo + Nav Links */}
+          {/* Left. Logo + Nav Links */}
           <div className="flex items-center gap-10">
             <a href="/" className="flex items-center gap-2.5 shrink-0">
               <Image
@@ -66,7 +66,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Right — Contact + Donate CTA */}
+          {/* Right. Contact + Donate CTA */}
           <div className="hidden md:flex items-center gap-8">
             {RIGHT_LINKS.map((link) => (
               <NavItem key={link.href} label={link.label} href={link.href} />

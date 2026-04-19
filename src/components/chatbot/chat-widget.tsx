@@ -10,7 +10,7 @@ import FaqChips from "./faq-chips";
 import ChatActions from "./chat-actions";
 
 const GREETING =
-  "Hi — I'm ATLAS, the intake assistant for Forged By Fire. We're a Springfield nonprofit supporting families affected by house fires. How can I help — emergency support, donating, volunteering, or something else?";
+  "Hi. I'm ATLAS, the intake assistant for Forged By Fire. We're a Springfield nonprofit supporting families affected by house fires. How can I help. emergency support, donating, volunteering, or something else?";
 
 function makeMsg(role: ChatMessage["role"], content: string, extra?: Partial<ChatMessage>): ChatMessage {
   return { id: crypto.randomUUID(), role, content, timestamp: Date.now(), ...extra };
@@ -84,7 +84,7 @@ export default function ChatWidget() {
   useEffect(() => { scrollToBottom(); }, [messages, showContactGate, scrollToBottom]);
   useEffect(() => { if (open && !isMobile) inputRef.current?.focus(); }, [open, isMobile]);
 
-  // Simple body scroll lock — no position:fixed tricks
+  // Simple body scroll lock. no position:fixed tricks
   useEffect(() => {
     if (!open) return;
     document.documentElement.style.overflow = "hidden";
@@ -129,7 +129,7 @@ export default function ChatWidget() {
       });
     } catch {}
     const syntheticMsg = `[CONTACT_PROVIDED: name="${info.name}" email="${info.email}"]`;
-    setMessages((prev) => [...prev, makeMsg("system", `Thanks, ${info.name} — our team now has your info and will follow up within 24 hours.`)]);
+    setMessages((prev) => [...prev, makeMsg("system", `Thanks, ${info.name}. our team now has your info and will follow up within 24 hours.`)]);
     sendMessage(syntheticMsg, true);
   };
 
@@ -156,7 +156,7 @@ export default function ChatWidget() {
   };
 
   const downloadChat = () => {
-    const header = `ATLAS — Forged By Fire Chat Transcript\n${new Date().toLocaleDateString()}\nhttps://forgedbyfire.org\n${"=".repeat(50)}\n\n`;
+    const header = `ATLAS. Forged By Fire Chat Transcript\n${new Date().toLocaleDateString()}\nhttps://forgedbyfire.org\n${"=".repeat(50)}\n\n`;
     const text = messages
       .filter((m) => m.role !== "system" || !m.content.startsWith("["))
       .map((m) => {
@@ -208,7 +208,7 @@ export default function ChatWidget() {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: msgText || "I'm sharing an image — can you help me?", history, image: imagePayload }),
+        body: JSON.stringify({ message: msgText || "I'm sharing an image. can you help me?", history, image: imagePayload }),
       });
       if (!res.ok) throw new Error("Chat request failed");
       const reader = res.body?.getReader();
@@ -274,7 +274,7 @@ export default function ChatWidget() {
         )}
       </AnimatePresence>
 
-      {/* Backdrop — mobile only */}
+      {/* Backdrop. mobile only */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -303,7 +303,7 @@ export default function ChatWidget() {
               boxShadow: "0 -4px 30px rgba(0,0,0,0.12), 0 8px 30px rgba(0,0,0,0.08)",
             }}
           >
-            {/* Swipeable header zone — mobile */}
+            {/* Swipeable header zone. mobile */}
             <motion.div
               drag={isMobile ? "y" : false}
               dragConstraints={{ top: 0, bottom: 0 }}
@@ -341,7 +341,7 @@ export default function ChatWidget() {
               </div>
             </motion.div>
 
-            {/* Messages — flex-1 + min-h-0 ensures proper flex shrinking */}
+            {/* Messages. flex-1 + min-h-0 ensures proper flex shrinking */}
             <div className="flex-1 min-h-0 overflow-y-auto py-3 overscroll-contain">
               {messages.map((msg) => (
                 <div key={msg.id}>
@@ -392,7 +392,7 @@ export default function ChatWidget() {
               </div>
             )}
 
-            {/* Input — 16px font prevents iOS zoom */}
+            {/* Input. 16px font prevents iOS zoom */}
             <div className="shrink-0 px-3 py-2.5 border-t border-[#111]/6" style={{ paddingBottom: "max(0.625rem, env(safe-area-inset-bottom))" }}>
               <form onSubmit={(e) => { e.preventDefault(); sendMessage(); }} className="flex items-center gap-1.5">
                 <button type="button" onClick={handleUploadClick} disabled={streaming} className="w-9 h-9 rounded-full hover:bg-[#F5F5F5] flex items-center justify-center shrink-0 disabled:opacity-30 transition-colors" aria-label="Upload utility bill">

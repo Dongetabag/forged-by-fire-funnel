@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "News & Updates",
   description:
-    "News, milestones, and stories from Forged By Fire — Springfield, Massachusetts fire relief nonprofit updates from the field.",
+    "News, milestones, and stories from Forged By Fire. Springfield, Massachusetts fire relief nonprofit updates from the field.",
   alternates: { canonical: "/news" },
   keywords: [
     "Forged By Fire news",
@@ -38,7 +38,7 @@ export default function NewsPage() {
               </h2>
               <p className="text-[15px] text-[#1A1A1A]/72 leading-relaxed mb-6 max-w-xl mx-auto">
                 Once our 501(c)(3) is confirmed and our first fiscal year closes,
-                we&apos;ll publish regular field updates here — stories from
+                we&apos;ll publish regular field updates here. stories from
                 families we&apos;ve supported, community events, donor spotlights,
                 and partnership milestones.
               </p>

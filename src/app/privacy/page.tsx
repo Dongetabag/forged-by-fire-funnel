@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Privacy Policy for Forged By Fire — how we collect, use, and protect information from donors, volunteers, and families we serve in Springfield, MA.",
+    "Privacy Policy for Forged By Fire. how we collect, use, and protect information from donors, volunteers, and families we serve in Springfield, MA.",
   alternates: { canonical: "/privacy" },
   robots: { index: true, follow: true },
 };
@@ -26,7 +26,7 @@ const sections = [
 • Communication details: messages you send via forms, chatbot, or email
 • Volunteer information: skills, availability, background-check consent where required
 • Donor information: donation amount, payment method (processed by third-party payment processors), giving history
-• Family support details: household composition, needs, fire incident information — collected only when you're receiving services from us
+• Family support details: household composition, needs, fire incident information. collected only when you're receiving services from us
 
 We also collect limited technical information automatically:
 • Server logs (IP address, browser type, pages visited)
@@ -79,7 +79,7 @@ To exercise these rights, email contact@forgedbyfire.org.`,
   },
   {
     heading: "9. Children's Information",
-    body: `Our site is not directed at children under 13, and we do not knowingly collect information from children under 13 without parental consent. When providing services to families, we may receive information about minors as part of household support — this is handled under "Sensitive Information" above.`,
+    body: `Our site is not directed at children under 13, and we do not knowingly collect information from children under 13 without parental consent. When providing services to families, we may receive information about minors as part of household support. this is handled under "Sensitive Information" above.`,
   },
   {
     heading: "10. Third-Party Services",

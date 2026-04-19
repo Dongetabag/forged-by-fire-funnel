@@ -15,7 +15,7 @@ const steps = [
   {
     number: "02",
     icon: PhoneCall,
-    title: "We Reach Out — Within 24 Hours",
+    title: "We Reach Out: Within 24 Hours",
     description:
       "Our team contacts the family within 24 hours of the fire to listen, understand their specific situation, and identify what they need most urgently.",
     detail: "Within 24 hours",
@@ -25,7 +25,7 @@ const steps = [
     icon: HandHeart,
     title: "Immediate Support Delivered",
     description:
-      "A $500 emergency debit card and resource package are delivered within 48 hours. Clothing, essentials, and direct help — nothing to fill out, no waiting.",
+      "A $500 emergency debit card and resource package are delivered within 48 hours. Clothing, essentials, and direct help, with nothing to fill out, no waiting.",
     detail: "Within 48 hours",
   },
   {
@@ -33,7 +33,7 @@ const steps = [
     icon: Heart,
     title: "Ongoing Care & Housing",
     description:
-      "We follow up weekly, connect families with transitional housing if needed, and stay in their corner as they rebuild — for as long as it takes.",
+      "We follow up weekly, connect families with transitional housing if needed, and stay in their corner as they rebuild, for as long as it takes.",
     detail: "For as long as it takes",
   },
 ];

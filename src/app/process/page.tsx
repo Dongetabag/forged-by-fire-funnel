@@ -7,7 +7,7 @@ import { Phone, PhoneCall, HandHeart, Heart, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our 4-Step Process — Fire Relief in Springfield, MA",
+  title: "Our 4-Step Process: Fire Relief in Springfield, MA",
   description:
     "How Forged By Fire responds to Springfield, Massachusetts house fires: Fire Department referral → 24-hour outreach → 48-hour emergency delivery → ongoing care and transitional housing. No red tape.",
   alternates: { canonical: "/process" },
@@ -25,9 +25,9 @@ const steps = [
     icon: Phone,
     title: "Fire Department Referral",
     timeframe: "Same-day referral",
-    long: "The Springfield Fire Department's Public Information Officer is our direct partner. When a family loses their home, they're asked — at the scene or shortly after — if they'd like support from Forged By Fire. The family never has to track us down in the chaos.",
+    long: "The Springfield Fire Department's Public Information Officer is our direct partner. When a family loses their home, they're asked, at the scene or shortly after, if they'd like support from Forged By Fire. The family never has to track us down in the chaos.",
     detail: [
-      "Direct partnership with SFD — no middlemen",
+      "Direct partnership with SFD. no middlemen",
       "Family gives consent; we get the referral same day",
       "No forms, no applications in the first contact",
     ],
@@ -36,11 +36,11 @@ const steps = [
   {
     number: "02",
     icon: PhoneCall,
-    title: "We Reach Out — Within 24 Hours",
+    title: "We Reach Out: Within 24 Hours",
     timeframe: "Within 24 hours",
-    long: "Our team contacts the family within 24 hours of the fire. The first call is about listening — understanding the specific family, what they lost, what they have left, who needs what. Not a needs-assessment form. A real conversation.",
+    long: "Our team contacts the family within 24 hours of the fire. The first call is about listening. understanding the specific family, what they lost, what they have left, who needs what. Not a needs-assessment form. A real conversation.",
     detail: [
-      "Warm, unhurried phone call — no checklists",
+      "Warm, unhurried phone call. no checklists",
       "Identify most-urgent needs in the next 48 hours",
       "Confirm safe contact point and delivery logistics",
     ],
@@ -53,7 +53,7 @@ const steps = [
     timeframe: "Within 48 hours",
     long: "A $500 pre-loaded emergency debit card, clothing for every family member, and essentials are delivered within 48 hours of the fire. Not weeks. Not after verification. When the family is still processing, the support shows up.",
     detail: [
-      "$500 debit card — use for what they need most",
+      "$500 debit card. use for what they need most",
       "Clothing, shoes, toiletries sized for every family member",
       "Resource packet: insurance, Red Cross, local housing partners",
     ],
@@ -64,7 +64,7 @@ const steps = [
     icon: Heart,
     title: "Ongoing Care & Transitional Housing",
     timeframe: "For as long as it takes",
-    long: "We follow up weekly. Families who need transitional housing can move into our unit — up to 5 families at a time — with case management and a clear path to permanent housing. Some families need a week. Others need six months. We stay until they're rebuilt.",
+    long: "We follow up weekly. Families who need transitional housing can move into our unit, up to 5 families at a time, with case management and a clear path to permanent housing. Some families need a week. Others need six months. We stay until they're rebuilt.",
     detail: [
       "Weekly check-ins and individualized support plan",
       "Transitional housing with case management",
@@ -88,7 +88,7 @@ export default function ProcessPage() {
           imageAlt="Fire truck at the scene of a Springfield house fire"
         />
 
-        {/* Steps — alternating layout */}
+        {/* Steps. alternating layout */}
         <div className="py-20 md:py-24">
           <div className="container-tight">
             {steps.map((step, i) => (

@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Heart, Shirt, Utensils, Home, CreditCard, Sparkles } from "lucide-react";
 
-// Impact tiers — what each dollar amount translates to in tangible support
+// Impact tiers. what each dollar amount translates to in tangible support
 const tiers = [
   { min: 10, max: 24, icon: Utensils, label: "A hot meal & basics", desc: "Covers a warm meal for a family on the night of their fire" },
   { min: 25, max: 49, icon: Shirt, label: "Clothing essentials", desc: "A set of clothing, shoes, or pajamas for a displaced family member" },
@@ -62,7 +62,7 @@ export default function ImpactCalculator() {
           className="card-light p-8 md:p-12 max-w-4xl mx-auto"
         >
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            {/* Left — amount input */}
+            {/* Left. amount input */}
             <div>
               <label className="text-[10px] uppercase tracking-widest text-[#1A1A1A]/50 mb-3 block">
                 Your Donation
@@ -124,7 +124,7 @@ export default function ImpactCalculator() {
               </a>
             </div>
 
-            {/* Right — impact display */}
+            {/* Right. impact display */}
             <div className="card-ember p-6 md:p-7">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-[#E85D23] flex items-center justify-center shrink-0 shadow-[0_6px_20px_rgba(232,93,35,0.35)]">

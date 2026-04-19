@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Leadership & Board",
   description:
-    "Meet the leadership behind Forged By Fire — founder Lt. Donald Coleman Jr. and the team building a fire relief nonprofit in Springfield, Massachusetts.",
+    "Meet the leadership behind Forged By Fire. founder Lt. Donald Coleman Jr. and the team building a fire relief nonprofit in Springfield, Massachusetts.",
   alternates: { canonical: "/leadership" },
   keywords: [
     "Forged By Fire leadership",
@@ -74,14 +74,14 @@ export default function LeadershipPage() {
                   Lt. Donald Coleman Jr. has served the Springfield community as
                   a firefighter since 2015. In 2022, a house fire destroyed his
                   own home while he was away on vacation. He spent 2.5 years
-                  restoring his grandparents&apos; home — a property that became
+                  restoring his grandparents&apos; home, a property that became
                   the foundation of Forged By Fire.
                 </p>
                 <p>
                   Donald leads Forged By Fire&apos;s day-to-day operations, the
                   partnership with the Springfield Fire Department, and the
                   intake of families following a fire. He is a firefighter first
-                  and a nonprofit leader second — the nonprofit exists because
+                  and a nonprofit leader second. the nonprofit exists because
                   he saw a gap no one else was filling.
                 </p>
                 <p>
@@ -125,9 +125,9 @@ export default function LeadershipPage() {
                     We&apos;re seating our founding board alongside our 501(c)(3) filing.
                   </h3>
                   <p className="text-[14px] text-[#1A1A1A]/72 leading-relaxed mb-4">
-                    A five-member board — representing Springfield community
+                    A five-member board, representing Springfield community
                     leadership, nonprofit governance, legal counsel, financial
-                    oversight, and fire-service expertise — is being seated.
+                    oversight, and fire-service expertise, is being seated.
                     Full board roster and bios will appear here once the roster
                     is confirmed.
                   </p>

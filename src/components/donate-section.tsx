@@ -172,7 +172,7 @@ export default function DonateSection() {
           </a>
           <p className="text-[11px] text-white/45 mt-5 max-w-md mx-auto">
             Payment integration coming soon. For now, click to be connected with
-            our team — every donor gets a personal thank-you from Lt. Coleman.
+            our team. every donor gets a personal thank-you from Lt. Coleman.
           </p>
         </motion.div>
       </div>

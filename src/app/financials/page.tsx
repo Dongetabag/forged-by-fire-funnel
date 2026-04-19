@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Financials & Transparency",
   description:
-    "Financial transparency at Forged By Fire — 100% of donations go directly to Springfield, Massachusetts families. Learn about our funding model, governance, and accountability.",
+    "Financial transparency at Forged By Fire. 100% of donations go directly to Springfield, Massachusetts families. Learn about our funding model, governance, and accountability.",
   alternates: { canonical: "/financials" },
   keywords: [
     "Forged By Fire financials",
@@ -27,7 +27,7 @@ const principles = [
   {
     icon: Receipt,
     title: "Separate operations funding",
-    desc: "Admin, marketing, and infrastructure are paid through founder contribution, in-kind support from partners, and operational-specific grants — not general donations.",
+    desc: "Admin, marketing, and infrastructure are paid through founder contribution, in-kind support from partners, and operational-specific grants, not general donations.",
   },
   {
     icon: Shield,
@@ -66,14 +66,14 @@ export default function FinancialsPage() {
                 </h2>
                 <p className="text-[15px] text-[#1A1A1A]/65 leading-relaxed mb-4">
                   Most nonprofits split incoming donations between program
-                  expenses, administration, and fundraising — which means a
+                  expenses, administration, and fundraising. which means a
                   portion of every gift is used to pay for overhead.
                 </p>
                 <p className="text-[15px] text-[#1A1A1A]/65 leading-relaxed">
                   We intentionally separate those streams. Donations to our
                   emergency fund go entirely to emergency support and
                   transitional housing. Operations and administration are
-                  funded through a separate operating fund — covered by our
+                  funded through a separate operating fund. covered by our
                   founder, in-kind partner support, and operational grants.
                 </p>
               </div>

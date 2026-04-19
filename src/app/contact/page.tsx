@@ -6,9 +6,9 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact — Emergency Help, Donate, Volunteer, Partner",
+  title: "Contact: Emergency Help, Donate, Volunteer, Partner",
   description:
-    "Reach Forged By Fire in Springfield, Massachusetts for emergency support after a house fire, donations, volunteering, or partnership. Response within 24 hours — same-day for active emergencies.",
+    "Reach Forged By Fire in Springfield, Massachusetts for emergency support after a house fire, donations, volunteering, or partnership. Response within 24 hours, same-day for active emergencies.",
   alternates: { canonical: "/contact" },
   keywords: [
     "Springfield house fire help contact",
@@ -63,7 +63,7 @@ export default function ContactPage() {
           imageAlt="A Massachusetts town at dusk"
         />
 
-        {/* 3 paths — reuse homepage contact component */}
+        {/* 3 paths. reuse homepage contact component */}
         <ContactForm />
 
         {/* Contact details */}
@@ -115,7 +115,7 @@ export default function ContactPage() {
               EMERGENCY AFTER A SPRINGFIELD FIRE
             </p>
             <h3 className="text-2xl md:text-3xl font-normal text-white mb-4 tracking-tight">
-              If you or someone you know just lost a home to fire — use the form above and check &ldquo;I need emergency help.&rdquo;
+              If you or someone you know just lost a home to fire. use the form above and check &ldquo;I need emergency help.&rdquo;
             </h3>
             <p className="text-[14px] text-white/65 max-w-lg mx-auto">
               Active emergencies receive same-day response. The Springfield

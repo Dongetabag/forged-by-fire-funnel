@@ -29,13 +29,13 @@ const sections = [
     heading: "Known Limitations",
     body: `This site is actively maintained. We regularly review accessibility and address issues as we discover them. Current known considerations:
 
-• Some image descriptions may be brief — we welcome requests for more detailed descriptions of any image
+• Some image descriptions may be brief. We welcome requests for more detailed descriptions of any image
 • Third-party embeds (chat assistant, payment processors once live) may have accessibility characteristics outside our direct control
-• Rich photography and motion may not be ideal for every accessibility need — reduced-motion preferences are respected where possible`,
+• Rich photography and motion may not be ideal for every accessibility need. reduced-motion preferences are respected where possible`,
   },
   {
     heading: "If You Encounter a Barrier",
-    body: `If any part of forgedbyfire.org is not working for you — or if you need information in an alternative format — please email contact@forgedbyfire.org. We will respond within 2 business days and do our best to make the information available to you in a format you can use.`,
+    body: `If any part of forgedbyfire.org is not working for you. or if you need information in an alternative format. please email contact@forgedbyfire.org. We will respond within 2 business days and do our best to make the information available to you in a format you can use.`,
   },
   {
     heading: "Ongoing Improvement",
@@ -58,7 +58,7 @@ export default function AccessibilityPage() {
       label="Accessibility"
       title="Accessibility"
       highlight="Statement"
-      subtitle="Our commitment to making Forged By Fire's website and services usable by everyone — including people with disabilities."
+      subtitle="Our commitment to making Forged By Fire's website and services usable by everyone. including people with disabilities."
       lastUpdated="April 19, 2026"
       sections={sections}
     />

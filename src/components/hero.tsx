@@ -74,7 +74,7 @@ export default function Hero() {
           {/* Ember-dark base background */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#1A0F08] via-[#2A1B12] to-[#0F0705]" />
 
-          {/* Fire damage photo — positioned on the LEFT, faded into dark on the right */}
+          {/* Fire damage photo. positioned on the LEFT, faded into dark on the right */}
           <div className="absolute inset-0 pointer-events-none">
             <div className="relative w-full lg:w-[62%] h-full">
               <Image
@@ -98,7 +98,7 @@ export default function Hero() {
           <div className="absolute top-1/4 left-1/3 w-[450px] h-[450px] bg-[#E85D23] opacity-20 blur-[160px] rounded-full pointer-events-none" />
           <div className="absolute bottom-1/4 right-1/3 w-[400px] h-[400px] bg-[#F59E0B] opacity-10 blur-[140px] rounded-full pointer-events-none" />
 
-          {/* Content — split layout */}
+          {/* Content. split layout */}
           <div
             className="relative z-10 flex flex-col justify-between h-full"
             style={{ minHeight: "calc(100vh - 104px)" }}
@@ -126,7 +126,7 @@ export default function Hero() {
             {/* Main content */}
             <div className="flex-1 flex items-end">
               <div className="w-full grid lg:grid-cols-2 gap-8 lg:gap-12 px-6 md:px-10 pb-8 md:pb-12">
-                {/* Left — Copy */}
+                {/* Left. Copy */}
                 <div className="flex flex-col justify-end">
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -188,7 +188,7 @@ export default function Hero() {
                   </motion.div>
                 </div>
 
-                {/* Right — Get Support Form */}
+                {/* Right. Get Support Form */}
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -216,7 +216,7 @@ export default function Hero() {
                           Get Help or Get Involved
                         </h3>
                         <p className="text-[12px] text-white/60">
-                          Tell us how we can support you — takes 30 seconds.
+                          Tell us how we can support you. takes 30 seconds.
                         </p>
                       </div>
 

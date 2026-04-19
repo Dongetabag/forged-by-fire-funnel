@@ -8,7 +8,7 @@ import { CheckCircle2, Flame, Home, Clock, Heart, ArrowRight } from "lucide-reac
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services — Emergency Fire Relief & Transitional Housing",
+  title: "Services: Emergency Fire Relief & Transitional Housing",
   description:
     "Springfield, Massachusetts fire relief services: $500 emergency debit card within 48 hours of a house fire, plus transitional housing for families rebuilding. Same-day referrals from Springfield Fire Department.",
   alternates: { canonical: "/services" },
@@ -26,7 +26,7 @@ const servicesFaqs = [
   {
     question: "What does Forged By Fire do for Springfield families after a house fire?",
     answer:
-      "We provide two pillars of support: (1) Emergency Resources — a $500 pre-loaded debit card, clothing, shoes, and essentials delivered within 48 hours of a house fire in Springfield, MA, and (2) Transitional Housing — safe temporary shelter for up to 5 families at a time with case management and a path to permanent housing.",
+      "We provide two pillars of support: (1) Emergency Resources. a $500 pre-loaded debit card, clothing, shoes, and essentials delivered within 48 hours of a house fire in Springfield, MA, and (2) Transitional Housing. safe temporary shelter for up to 5 families at a time with case management and a path to permanent housing.",
   },
   {
     question: "How fast does Forged By Fire respond after a Springfield house fire?",
@@ -41,23 +41,23 @@ const servicesFaqs = [
   {
     question: "How does the Springfield Fire Department refer families to Forged By Fire?",
     answer:
-      "Through our direct partnership with the Springfield Fire Department's Public Information Officer, families are asked at the scene (or shortly after) whether they'd like support from Forged By Fire. The family gives consent, and we receive the referral the same day — no applications required in the first contact.",
+      "Through our direct partnership with the Springfield Fire Department's Public Information Officer, families are asked at the scene (or shortly after) whether they'd like support from Forged By Fire. The family gives consent, and we receive the referral the same day. no applications required in the first contact.",
   },
   {
     question: "Is the $500 emergency debit card taxable or do I have to pay it back?",
     answer:
-      "No. The emergency debit card and all other support from Forged By Fire are gifts to families — not loans. Families can use the card for immediate needs: food, clothing, shelter expenses, prescriptions, transportation, or whatever is most urgent.",
+      "No. The emergency debit card and all other support from Forged By Fire are gifts to families, not loans. Families can use the card for immediate needs: food, clothing, shelter expenses, prescriptions, transportation, or whatever is most urgent.",
   },
   {
     question: "How long can a family stay in Forged By Fire transitional housing?",
     answer:
-      "Transitional housing is designed as a bridge, not a permanent stay. Families typically stay a few weeks to a few months while working with our case manager on permanent housing. There's no fixed limit — we stay until families are stable.",
+      "Transitional housing is designed as a bridge, not a permanent stay. Families typically stay a few weeks to a few months while working with our case manager on permanent housing. There's no fixed limit. We stay until families are stable.",
   },
 ];
 
 const emergencyBullets = [
   "$500 pre-loaded emergency debit card, delivered within 48 hours of the fire",
-  "Clothing, shoes, and essentials for every family member — sized to fit",
+  "Clothing, shoes, and essentials for every family member. sized to fit",
   "Resource navigation: insurance claims, Red Cross, local housing assistance",
   "Direct coordination with the Springfield Fire Department's PIO",
   "Meals and hygiene kits for the first critical nights",
@@ -67,7 +67,7 @@ const housingBullets = [
   "Capacity for up to 5 families at a time in our transitional housing unit",
   "Case management: weekly check-ins and individualized support plans",
   "Life-skills and financial-literacy resources for long-term stability",
-  "Structured transition into permanent housing — not a permanent stay",
+  "Structured transition into permanent housing, not a permanent stay",
   "Counseling referrals and community connection",
 ];
 
@@ -80,7 +80,7 @@ const eligibility = [
   {
     icon: Home,
     title: "The fire caused significant loss of home or possessions",
-    desc: "Partial damage, full destruction, or displacement — we respond when a family can't stay in their home and needs immediate help.",
+    desc: "Partial damage, full destruction, or displacement. We respond when a family can't stay in their home and needs immediate help.",
   },
   {
     icon: Clock,
@@ -99,7 +99,7 @@ export default function ServicesPage() {
           label="Services"
           title="Two pillars of support."
           highlight="One urgent response."
-          subtitle="When fire hits a Springfield family, we show up within 24 hours with emergency resources — and we stay for the rebuild with transitional housing."
+          subtitle="When fire hits a Springfield family, we show up within 24 hours with emergency resources. and we stay for the rebuild with transitional housing."
           image="/images/fire-scene-2.jpg"
           imageAlt="Fire truck responding to a Springfield house fire"
         />
@@ -123,7 +123,7 @@ export default function ServicesPage() {
                 </p>
                 <p className="text-[15px] text-[#1A1A1A]/65 leading-relaxed mb-8">
                   Every Forged By Fire emergency response is built around one idea:
-                  when you lose everything, every little bit counts — and it counts
+                  when you lose everything, every little bit counts. and it counts
                   most in the first two days.
                 </p>
 
@@ -188,13 +188,13 @@ export default function ServicesPage() {
                 </h2>
                 <p className="text-[15px] text-[#1A1A1A]/65 leading-relaxed mb-5">
                   The home Donald restored over two and a half years is now
-                  Forged By Fire&apos;s transitional housing — offering families
+                  Forged By Fire&apos;s transitional housing. offering families
                   stable, supportive shelter while they rebuild their lives.
                 </p>
                 <p className="text-[15px] text-[#1A1A1A]/65 leading-relaxed mb-8">
                   This isn&apos;t a shelter. It&apos;s a bridge. With case
                   management, life-skills resources, and a clear path to
-                  permanent housing, families move forward — not in circles.
+                  permanent housing, families move forward, not in circles.
                 </p>
 
                 <ul className="space-y-3 mb-8">
@@ -251,7 +251,7 @@ export default function ServicesPage() {
                 href="/contact"
                 className="group inline-flex items-center gap-2 text-[13px] font-semibold text-[#9B2F0A] hover:text-[#E85D23] transition-colors"
               >
-                Not sure if you qualify? Reach out anyway — we&apos;ll help.
+                Not sure if you qualify? Reach out anyway. we&apos;ll help.
                 <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </div>

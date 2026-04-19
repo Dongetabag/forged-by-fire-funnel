@@ -20,7 +20,7 @@ const pairs = [
   },
   {
     src: "/images/before-after-4.jpg",
-    caption: "Two and a half years later — a vessel for good.",
+    caption: "Two and a half years later. a vessel for good.",
   },
 ];
 

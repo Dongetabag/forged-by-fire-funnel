@@ -10,7 +10,7 @@ const groups = [
     icon: Users,
     name: "Families with Children",
     stat: "Primary focus",
-    desc: "Emergency support packages built around family needs — clothes for every child, essentials, stability.",
+    desc: "Emergency support packages built around family needs, clothes for every child, essentials, stability.",
     image: "/images/family-kitchen.jpg",
   },
   {
@@ -70,7 +70,7 @@ export default function WhoWeHelp() {
           </h2>
           <p className="text-[15px] text-[#1A1A1A]/55 max-w-xl mx-auto">
             We serve families most vulnerable to the financial and emotional toll of
-            losing a home — and we partner with the organizations that know them.
+            losing a home. and we partner with the organizations that know them.
           </p>
         </motion.div>
 

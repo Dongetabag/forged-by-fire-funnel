@@ -10,7 +10,7 @@ const pillars = [
     label: "EMERGENCY RESOURCES",
     title: "The first 48 hours matter most",
     description:
-      "When a Springfield family loses their home to fire, we step in within 24 hours with immediate, tangible support — no paperwork gauntlet, no waiting weeks for help.",
+      "When a Springfield family loses their home to fire, we step in within 24 hours with immediate, tangible support. no paperwork gauntlet, no waiting weeks for help.",
     bullets: [
       "$500 emergency debit card for immediate needs",
       "Clothing, shoes, and essentials for every family member",
@@ -27,7 +27,7 @@ const pillars = [
     label: "TRANSITIONAL HOUSING",
     title: "A safe place to start over",
     description:
-      "Our transitional housing program provides stable, supportive temporary shelter for families rebuilding after a fire — with case management, life-skills resources, and a path to permanent housing.",
+      "Our transitional housing program provides stable, supportive temporary shelter for families rebuilding after a fire, with case management, life-skills resources, and a path to permanent housing.",
     bullets: [
       "Capacity for up to 5 families at a time",
       "Case management and support services",
@@ -46,7 +46,7 @@ const commitment = {
   label: "OUR COMMITMENT",
   title: "No family rebuilds alone in Springfield",
   description:
-    "Most fire-relief programs show up days or weeks after the fire. We believe the first 48 hours — when families are still in shock, still wearing the same clothes they evacuated in — are when support matters most. That's the gap we close.",
+    "Most fire-relief programs show up days or weeks after the fire. We believe the first 48 hours, when families are still in shock, still wearing the same clothes they evacuated in, are when support matters most. That's the gap we close.",
 };
 
 export default function Services() {
@@ -87,7 +87,7 @@ export default function Services() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="group card-light overflow-hidden flex flex-col"
             >
-              {/* Image — taller aspect + top-anchored so faces stay in frame */}
+              {/* Image. taller aspect + top-anchored so faces stay in frame */}
               <div className="img-card aspect-[4/3] relative">
                 <Image
                   src={pillar.image}

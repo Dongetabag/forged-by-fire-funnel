@@ -7,9 +7,9 @@ import { ArrowRight, Flame, Heart, Users } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FAQ — Frequently Asked Questions",
+  title: "FAQ: Frequently Asked Questions",
   description:
-    "Answers to common questions about Forged By Fire — how we help Springfield, Massachusetts families after a house fire, how donations are used, and how to volunteer or partner with us.",
+    "Answers to common questions about Forged By Fire. how we help Springfield, Massachusetts families after a house fire, how donations are used, and how to volunteer or partner with us.",
   alternates: { canonical: "/faq" },
   keywords: [
     "Forged By Fire FAQ",
@@ -42,14 +42,14 @@ const categories = [
           "No. Emergency resources are gifts. You do not pay us back, and there is no interest, no loan, and no fee.",
       },
       {
-        question: "What if my house fire is outside Springfield — can Forged By Fire help?",
+        question: "What if my house fire is outside Springfield. can Forged By Fire help?",
         answer:
           "Our primary service area is Springfield, MA. We review Pioneer Valley referrals case-by-case when capacity allows. If we can't serve you directly, we'll try to connect you with an appropriate partner organization.",
       },
       {
         question: "Can I request transitional housing?",
         answer:
-          "Yes — transitional housing is available for families whose home is a total loss or uninhabitable after a fire. We have capacity for up to 5 families at a time. Apply via our Contact page and we'll assess need and fit.",
+          "Yes. transitional housing is available for families whose home is a total loss or uninhabitable after a fire. We have capacity for up to 5 families at a time. Apply via our Contact page and we'll assess need and fit.",
       },
     ],
   },
@@ -103,7 +103,7 @@ const categories = [
       {
         question: "Do I need a background check to volunteer?",
         answer:
-          "For some roles — particularly those involving direct contact with families or access to the transitional housing unit — yes. For general sort/packaging work and skills-based volunteering, no.",
+          "For some roles, particularly those involving direct contact with families or access to the transitional housing unit — yes. For general sort/packaging work and skills-based volunteering, no.",
       },
       {
         question: "Are you looking for community partners?",
@@ -113,7 +113,7 @@ const categories = [
       {
         question: "Do you provide press interviews or media appearances?",
         answer:
-          "Yes — see our Press / Media Kit page for boilerplate info, logo downloads, and our media-request contact.",
+          "Yes. see our Press / Media Kit page for boilerplate info, logo downloads, and our media-request contact.",
       },
     ],
   },

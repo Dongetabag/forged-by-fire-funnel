@@ -75,7 +75,7 @@ export default function FounderStory() {
               Lt. Donald Coleman Jr. has proudly served as a firefighter since 2015,
               dedicating his life to protecting others in their most vulnerable moments.
               Through his work, he has witnessed firsthand the devastating impact that
-              house fires have on families — not just physically, but emotionally and
+              house fires have on families, not just physically, but emotionally and
               financially.
             </p>
             <p>
@@ -88,8 +88,8 @@ export default function FounderStory() {
             </p>
             <p>
               This was not the first time fire had impacted his family. Just three
-              years earlier, his grandparents&apos; home — where multiple generations
-              had been raised and countless memories created — also suffered a fire.
+              years earlier, his grandparents&apos; home, where multiple generations
+              had been raised and countless memories created. also suffered a fire.
               Though it had been vacant for years, it still stood as a symbol of
               family legacy and resilience.
             </p>
@@ -97,11 +97,11 @@ export default function FounderStory() {
               Faced with homelessness and the challenge of rebuilding, Donald took
               action. Over the course of two and a half years, he navigated setbacks,
               financial strain, and the emotional weight of restoring his grandparents&apos;
-              home — not just a structure, but stability itself.
+              home, not just a structure, but stability itself.
             </p>
             <p className="text-[#9B2F0A] font-medium">
               Through that journey, a greater purpose was born. Donald realized this
-              home could become more than a place for himself — it could serve as a
+              home could become more than a place for himself, it could serve as a
               vessel for good. A place to support families who have experienced the
               same loss, but may not have the resources or support system to recover.
             </p>
@@ -183,7 +183,7 @@ export default function FounderStory() {
               have to go through that journey alone.&rdquo;
             </blockquote>
             <cite className="not-italic text-[13px] text-[#1A1A1A]/55">
-              — Lt. Donald Coleman Jr., Founder
+— Lt. Donald Coleman Jr., Founder
             </cite>
           </div>
         </motion.div>

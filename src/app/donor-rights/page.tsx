@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Donor Bill of Rights",
   description:
-    "Every donor to Forged By Fire has rights — transparency on mission, financials, use of donations, recognition preferences, and communication choice.",
+    "Every donor to Forged By Fire has rights. transparency on mission, financials, use of donations, recognition preferences, and communication choice.",
   alternates: { canonical: "/donor-rights" },
 };
 
@@ -47,7 +47,7 @@ const sections = [
   },
   {
     heading: "9. Fundraiser Identity",
-    body: `Every donor has the right to know whether individuals seeking donations on our behalf are staff, volunteers, or paid professional solicitors. We currently accept donations directly through our own staff and volunteers — we do not use paid professional solicitors.`,
+    body: `Every donor has the right to know whether individuals seeking donations on our behalf are staff, volunteers, or paid professional solicitors. We currently accept donations directly through our own staff and volunteers. We do not use paid professional solicitors.`,
   },
   {
     heading: "10. Removal from Mailing Lists",
@@ -55,7 +55,7 @@ const sections = [
   },
   {
     heading: "11. Answers to Questions",
-    body: `Every donor has the right to feel free to ask questions when making a donation and to receive prompt, truthful, and forthright answers. Email contact@forgedbyfire.org anytime — we respond within 24 hours.`,
+    body: `Every donor has the right to feel free to ask questions when making a donation and to receive prompt, truthful, and forthright answers. Email contact@forgedbyfire.org anytime. We respond within 24 hours.`,
   },
   {
     heading: "Contact",
@@ -69,7 +69,7 @@ export default function DonorRightsPage() {
       label="Donor Rights"
       title="Donor Bill of"
       highlight="Rights"
-      subtitle="Every person who contributes to Forged By Fire has rights — transparency, choice, confidentiality, and respect. Here's our commitment to you."
+      subtitle="Every person who contributes to Forged By Fire has rights. transparency, choice, confidentiality, and respect. Here's our commitment to you."
       lastUpdated="April 19, 2026"
       sections={sections}
     />

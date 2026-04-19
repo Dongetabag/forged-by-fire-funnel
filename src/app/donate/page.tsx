@@ -9,7 +9,7 @@ import { Heart, Package, Building2, Repeat, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Donate to Springfield Fire Victims — Forged By Fire",
+  title: "Donate to Springfield Fire Victims: Forged By Fire",
   description:
     "100% of donations to Forged By Fire reach Springfield, Massachusetts families affected by house fires. $500 funds one family's full emergency response. Every little bit counts.",
   alternates: { canonical: "/donate" },
@@ -51,7 +51,7 @@ const waysToGive = [
 ];
 
 const transparency = [
-  { label: "Dollars to families", value: "100%", desc: "Every donation reaches a Springfield family — operations are funded separately." },
+  { label: "Dollars to families", value: "100%", desc: "Every donation reaches a Springfield family. operations are funded separately." },
   { label: "First dollar to delivery", value: "≤ 48 hrs", desc: "Donations received today can fund an emergency response tomorrow." },
   { label: "501(c)(3) status", value: "Pending", desc: "Tax-deductible status pending confirmation. We'll update donors when filed." },
 ];
@@ -65,7 +65,7 @@ export default function DonatePage() {
           label="Donate"
           title="Every dollar reaches a"
           highlight="Springfield family."
-          subtitle="100% of donations go directly to families affected by house fires. Operations are covered separately. Every little bit counts — and every little bit actually counts."
+          subtitle="100% of donations go directly to families affected by house fires. Operations are covered separately. Every little bit counts, and every little bit actually counts."
           image="/images/family-moving-in-2.jpg"
           imageAlt="A family settled into transitional housing"
         />

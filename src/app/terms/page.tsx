@@ -28,7 +28,7 @@ const sections = [
   },
   {
     heading: "4. No Professional Advice",
-    body: `Information on this site — including pages about emergency response, housing, donations, and the founder's story — is provided for general informational purposes only. It is not legal, financial, medical, insurance, or professional advice. For specific situations, please consult the appropriate professional (insurance adjuster, attorney, healthcare provider, etc.).`,
+    body: `Information on this site. including pages about emergency response, housing, donations, and the founder's story. is provided for general informational purposes only. It is not legal, financial, medical, insurance, or professional advice. For specific situations, please consult the appropriate professional (insurance adjuster, attorney, healthcare provider, etc.).`,
   },
   {
     heading: "5. Donations",
