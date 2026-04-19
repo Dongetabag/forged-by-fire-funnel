@@ -10,7 +10,7 @@ import FaqChips from "./faq-chips";
 import ChatActions from "./chat-actions";
 
 const GREETING =
-  "Hi — I'm EMBER, the intake assistant for Forged By Fire. We're a Springfield nonprofit supporting families affected by house fires. How can I help — emergency support, donating, volunteering, or something else?";
+  "Hi — I'm ATLAS, the intake assistant for Forged By Fire. We're a Springfield nonprofit supporting families affected by house fires. How can I help — emergency support, donating, volunteering, or something else?";
 
 function makeMsg(role: ChatMessage["role"], content: string, extra?: Partial<ChatMessage>): ChatMessage {
   return { id: crypto.randomUUID(), role, content, timestamp: Date.now(), ...extra };
@@ -156,11 +156,11 @@ export default function ChatWidget() {
   };
 
   const downloadChat = () => {
-    const header = `EMBER — Forged By Fire Chat Transcript\n${new Date().toLocaleDateString()}\nhttps://forgedbyfire.org\n${"=".repeat(50)}\n\n`;
+    const header = `ATLAS — Forged By Fire Chat Transcript\n${new Date().toLocaleDateString()}\nhttps://forgedbyfire.org\n${"=".repeat(50)}\n\n`;
     const text = messages
       .filter((m) => m.role !== "system" || !m.content.startsWith("["))
       .map((m) => {
-        const role = m.role === "user" ? "You" : m.role === "system" ? "System" : "EMBER";
+        const role = m.role === "user" ? "You" : m.role === "system" ? "System" : "ATLAS";
         return `[${new Date(m.timestamp).toLocaleString()}] ${role}:\n${m.content}\n`;
       })
       .join("\n---\n\n");
@@ -323,7 +323,7 @@ export default function ChatWidget() {
                     <MessageCircle size={15} className="text-white" />
                   </div>
                   <div>
-                    <p className="text-[14px] font-medium tracking-tight text-[#1A1A1A]">EMBER</p>
+                    <p className="text-[14px] font-medium tracking-tight text-[#1A1A1A]">ATLAS</p>
                     <p className="text-[11px] tracking-wide text-[#1A1A1A]/50 flex items-center gap-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#16A34A] inline-block" />
                       Forged By Fire Assistant
