@@ -144,7 +144,7 @@ export default function Hero() {
                       </span>
                     </h1>
                     <p className="text-[15px] md:text-base text-white/80 max-w-md leading-relaxed mb-6">
-                      A Springfield, MA nonprofit founded by Lt. Donald Coleman Jr. —
+                      A Springfield, MA nonprofit founded by Lt. Donald Coleman Jr.,
                       a firefighter who lost everything in a 2022 house fire and turned
                       that loss into a mission to help families rebuild.
                     </p>

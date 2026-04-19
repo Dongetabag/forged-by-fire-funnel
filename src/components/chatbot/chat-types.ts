@@ -32,8 +32,8 @@ export interface ContactInfo {
 }
 
 export const INITIAL_FAQS: ChatAction[] = [
-  { type: "faq", label: "I need emergency help", faqQuestion: "I just had a house fire in Springfield — I need emergency help" },
-  { type: "faq", label: "How can I donate?", faqQuestion: "I'd like to donate to Forged By Fire — how does my donation help?" },
+  { type: "faq", label: "I need emergency help", faqQuestion: "I just had a house fire in Springfield , I need emergency help" },
+  { type: "faq", label: "How can I donate?", faqQuestion: "I'd like to donate to Forged By Fire , how does my donation help?" },
   { type: "faq", label: "What's your impact?", faqQuestion: "What does $500 actually do for a family after a fire?" },
   { type: "faq", label: "I want to volunteer", faqQuestion: "How can I volunteer or donate items to Forged By Fire?" },
   { type: "faq", label: "Our founder's story", faqQuestion: "Who founded Forged By Fire and why?" },

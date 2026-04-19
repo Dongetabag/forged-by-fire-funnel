@@ -159,8 +159,8 @@ export default function ImpactCalculator() {
 
           {/* Footnote */}
           <p className="text-[11px] text-[#1A1A1A]/45 text-center mt-8">
-            Every little bit counts. 100% of donations go to families in need —
-            operations are covered separately.
+            Every little bit counts. 100% of donations go to families in need.
+            Operations are covered separately.
           </p>
         </motion.div>
       </div>
