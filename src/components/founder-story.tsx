@@ -83,7 +83,7 @@ export default function FounderStory() {
               While away on vacation, Donald&apos;s home in Springfield, Massachusetts
               was lost in a devastating fire. Had he been on duty, he would have been
               among the first responders arriving at his own address. Instead, he
-              returned to find everything gone. The home was deemed a total loss —
+              returned to find everything gone. The home was deemed a total loss,
               a lifetime of belongings reduced to ashes.
             </p>
             <p>
@@ -183,7 +183,7 @@ export default function FounderStory() {
               have to go through that journey alone.&rdquo;
             </blockquote>
             <cite className="not-italic text-[13px] text-[#1A1A1A]/55">
-— Lt. Donald Coleman Jr., Founder
+              Lt. Donald Coleman Jr., Founder
             </cite>
           </div>
         </motion.div>

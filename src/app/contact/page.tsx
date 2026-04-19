@@ -56,7 +56,7 @@ export default function ContactPage() {
       <main>
         <PageHero
           label="Contact"
-          title="How can we help you —"
+          title="How can we help you,"
           highlight="or how can you help us?"
           subtitle="Whether you need emergency support after a fire, want to donate, or want to partner with Forged By Fire, the path starts here."
           image="/images/massachusetts-town.jpg"

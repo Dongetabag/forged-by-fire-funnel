@@ -103,7 +103,7 @@ const categories = [
       {
         question: "Do I need a background check to volunteer?",
         answer:
-          "For some roles, particularly those involving direct contact with families or access to the transitional housing unit — yes. For general sort/packaging work and skills-based volunteering, no.",
+          "For some roles, particularly those involving direct contact with families or access to the transitional housing unit, yes. For general sort/packaging work and skills-based volunteering, no.",
       },
       {
         question: "Are you looking for community partners?",
