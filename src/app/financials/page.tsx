@@ -162,26 +162,35 @@ export default function FinancialsPage() {
 
             <div className="max-w-2xl mx-auto space-y-3">
               {[
-                { name: "Annual Report 2025", status: "In progress", href: "/annual-report" },
-                { name: "IRS Form 990", status: "Pending 501(c)(3)" },
-                { name: "Massachusetts charity registration", status: "In progress" },
-                { name: "Bylaws & board policies", status: "Available on request", href: "/contact" },
-                { name: "Conflict of interest policy", status: "Available on request", href: "/contact" },
+                { name: "Annual Report 2025", status: "In progress", href: "/annual-report" as const },
+                { name: "IRS Form 990", status: "Pending 501(c)(3)", href: null },
+                { name: "Massachusetts charity registration", status: "In progress", href: null },
+                { name: "Bylaws & board policies", status: "Available on request", href: "/contact" as const },
+                { name: "Conflict of interest policy", status: "Available on request", href: "/contact" as const },
               ].map((doc) => {
-                const Wrapper = doc.href ? Link : "div";
-                const wrapperProps = doc.href ? { href: doc.href } : {};
-                return (
-                  <Wrapper
-                    key={doc.name}
-                    {...wrapperProps}
-                    className={`card-light p-5 flex items-center justify-between ${doc.href ? "hover:border-[#E85D23]/30 transition-colors group" : ""}`}
-                  >
+                const content = (
+                  <>
                     <div>
                       <p className="text-[14px] font-medium text-[#1A1A1A]">{doc.name}</p>
                       <p className="text-[11px] uppercase tracking-widest text-[#9B2F0A] mt-1">{doc.status}</p>
                     </div>
-                    {doc.href && <ArrowRight size={16} className="text-[#1A1A1A]/30 group-hover:text-[#E85D23] group-hover:translate-x-1 transition-all" />}
-                  </Wrapper>
+                    {doc.href && (
+                      <ArrowRight
+                        size={16}
+                        className="text-[#1A1A1A]/30 group-hover:text-[#E85D23] group-hover:translate-x-1 transition-all"
+                      />
+                    )}
+                  </>
+                );
+                const className = `card-light p-5 flex items-center justify-between ${doc.href ? "hover:border-[#E85D23]/30 transition-colors group" : ""}`;
+                return doc.href ? (
+                  <Link key={doc.name} href={doc.href} className={className}>
+                    {content}
+                  </Link>
+                ) : (
+                  <div key={doc.name} className={className}>
+                    {content}
+                  </div>
                 );
               })}
             </div>

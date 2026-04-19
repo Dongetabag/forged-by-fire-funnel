@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/contact", priority: 0.85, changeFrequency: "monthly" as const },
     // Organizational & resources
     { url: "/leadership", priority: 0.7, changeFrequency: "monthly" as const },
-    { url: "/financials", priority: 0.75, changeFrequency: "quarterly" as const },
+    { url: "/financials", priority: 0.75, changeFrequency: "monthly" as const },
     { url: "/annual-report", priority: 0.7, changeFrequency: "yearly" as const },
     { url: "/press", priority: 0.6, changeFrequency: "monthly" as const },
     { url: "/faq", priority: 0.75, changeFrequency: "monthly" as const },
