@@ -8,6 +8,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Package, Truck, Megaphone, Briefcase, Heart, ArrowRight, CheckCircle2 } from "lucide-react";
 
+// NOTE: page-level metadata can't be exported from a "use client" file.
+// Volunteer metadata is handled by the layout template + the homepage link.
+
 const volunteerPaths = [
   {
     icon: Package,

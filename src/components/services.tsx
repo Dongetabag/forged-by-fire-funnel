@@ -18,9 +18,9 @@ const pillars = [
       "Direct partnership with Springfield Fire Department",
     ],
     stat: "Delivered in 48 hours",
-    image: "/images/photo-3.jpg",
+    image: "/images/community-cleanup.jpg",
     cta: "Request Emergency Support",
-    ctaHref: "#contact",
+    ctaHref: "/contact",
   },
   {
     icon: Home,
@@ -35,9 +35,9 @@ const pillars = [
       "Structured transition into permanent housing",
     ],
     stat: "5-family capacity",
-    image: "/images/photo-4.jpg",
+    image: "/images/family-moving-in.jpg",
     cta: "Apply for Housing Support",
-    ctaHref: "#contact",
+    ctaHref: "/contact",
   },
 ];
 

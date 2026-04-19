@@ -45,7 +45,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-[80px]">
           {/* Left — Logo + Nav Links */}
           <div className="flex items-center gap-10">
-            <a href="#top" className="flex items-center gap-2.5 shrink-0">
+            <a href="/" className="flex items-center gap-2.5 shrink-0">
               <Image
                 src="/fbf-logo.png"
                 alt="Forged By Fire"

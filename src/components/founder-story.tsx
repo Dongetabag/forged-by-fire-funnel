@@ -133,7 +133,7 @@ export default function FounderStory() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-2.5">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
             {photos.map((photo, i) => (
               <motion.div
                 key={photo.src}
@@ -141,15 +141,15 @@ export default function FounderStory() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.5, delay: i * 0.07 }}
-                className={`img-card aspect-[4/5] relative ${
-                  i === 0 ? "col-span-2 md:col-span-2 row-span-2 md:row-span-1 md:aspect-[4/5]" : ""
+                className={`img-card aspect-[4/3] relative ${
+                  i === 0 ? "col-span-2 row-span-1" : ""
                 }`}
               >
                 <Image
                   src={photo.src}
                   alt={photo.alt}
                   fill
-                  sizes="(max-width: 768px) 50vw, 20vw"
+                  sizes="(max-width: 768px) 50vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />

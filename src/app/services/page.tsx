@@ -1,16 +1,59 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import PageHero from "@/components/page-hero";
+import FaqSchema from "@/components/faq-schema";
 import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle2, Flame, Home, Clock, Heart, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services | Forged By Fire",
+  title: "Services — Emergency Fire Relief & Transitional Housing",
   description:
-    "Two pillars of support for Springfield families affected by house fires — Emergency Resources delivered in 48 hours and Transitional Housing for rebuilding.",
+    "Springfield, Massachusetts fire relief services: $500 emergency debit card within 48 hours of a house fire, plus transitional housing for families rebuilding. Same-day referrals from Springfield Fire Department.",
+  alternates: { canonical: "/services" },
+  keywords: [
+    "Springfield MA fire relief services",
+    "house fire emergency assistance Springfield",
+    "transitional housing Springfield Massachusetts",
+    "fire victim debit card Springfield",
+    "Springfield Fire Department referral support",
+    "emergency clothing after fire Springfield",
+  ],
 };
+
+const servicesFaqs = [
+  {
+    question: "What does Forged By Fire do for Springfield families after a house fire?",
+    answer:
+      "We provide two pillars of support: (1) Emergency Resources — a $500 pre-loaded debit card, clothing, shoes, and essentials delivered within 48 hours of a house fire in Springfield, MA, and (2) Transitional Housing — safe temporary shelter for up to 5 families at a time with case management and a path to permanent housing.",
+  },
+  {
+    question: "How fast does Forged By Fire respond after a Springfield house fire?",
+    answer:
+      "Our team contacts affected families within 24 hours of the fire and delivers the $500 emergency debit card and essentials within 48 hours. Active emergencies receive same-day response through our direct partnership with the Springfield Fire Department.",
+  },
+  {
+    question: "Who qualifies for fire relief from Forged By Fire?",
+    answer:
+      "Any family in Springfield, Massachusetts whose home was damaged or destroyed by fire within the last 30 days. Referrals from Pioneer Valley communities outside Springfield are reviewed case-by-case. No income verification is required for emergency resources.",
+  },
+  {
+    question: "How does the Springfield Fire Department refer families to Forged By Fire?",
+    answer:
+      "Through our direct partnership with the Springfield Fire Department's Public Information Officer, families are asked at the scene (or shortly after) whether they'd like support from Forged By Fire. The family gives consent, and we receive the referral the same day — no applications required in the first contact.",
+  },
+  {
+    question: "Is the $500 emergency debit card taxable or do I have to pay it back?",
+    answer:
+      "No. The emergency debit card and all other support from Forged By Fire are gifts to families — not loans. Families can use the card for immediate needs: food, clothing, shelter expenses, prescriptions, transportation, or whatever is most urgent.",
+  },
+  {
+    question: "How long can a family stay in Forged By Fire transitional housing?",
+    answer:
+      "Transitional housing is designed as a bridge, not a permanent stay. Families typically stay a few weeks to a few months while working with our case manager on permanent housing. There's no fixed limit — we stay until families are stable.",
+  },
+];
 
 const emergencyBullets = [
   "$500 pre-loaded emergency debit card, delivered within 48 hours of the fire",
@@ -50,6 +93,7 @@ export default function ServicesPage() {
   return (
     <>
       <Navbar />
+      <FaqSchema id="services" faqs={servicesFaqs} />
       <main>
         <PageHero
           label="Services"

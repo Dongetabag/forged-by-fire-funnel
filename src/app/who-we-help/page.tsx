@@ -7,9 +7,17 @@ import { Users, Baby, Heart, Home, Shield, HandHeart, ArrowRight } from "lucide-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Who We Help | Forged By Fire",
+  title: "Who We Help — Families & Partners in Springfield, MA",
   description:
-    "Forged By Fire serves Springfield, MA families most vulnerable after a house fire — and the community partners who help us reach them.",
+    "Forged By Fire serves Springfield, Massachusetts families most vulnerable after a house fire — families with children, single parents, seniors, and uninsured renters — plus the Springfield Fire Department, shelters, and community partners.",
+  alternates: { canonical: "/who-we-help" },
+  keywords: [
+    "Springfield MA family fire assistance",
+    "single parent fire relief Springfield",
+    "senior fire victim help Springfield",
+    "uninsured renter fire Springfield",
+    "Springfield community partners fire",
+  ],
 };
 
 const groups = [

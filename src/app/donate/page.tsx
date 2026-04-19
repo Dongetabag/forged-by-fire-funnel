@@ -9,9 +9,17 @@ import { Heart, Package, Building2, Repeat, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Donate | Forged By Fire",
+  title: "Donate to Springfield Fire Victims — Forged By Fire",
   description:
-    "100% of donations to Forged By Fire go directly to Springfield families affected by house fires. Every little bit counts.",
+    "100% of donations to Forged By Fire reach Springfield, Massachusetts families affected by house fires. $500 funds one family's full emergency response. Every little bit counts.",
+  alternates: { canonical: "/donate" },
+  keywords: [
+    "donate to Springfield fire victims",
+    "Springfield MA fire relief donation",
+    "help Springfield family after house fire",
+    "Springfield nonprofit donation",
+    "fire victim charity Springfield",
+  ],
 };
 
 const waysToGive = [

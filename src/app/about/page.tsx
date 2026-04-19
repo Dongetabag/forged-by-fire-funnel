@@ -7,9 +7,17 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Story | Forged By Fire",
+  title: "Our Story — Lt. Donald Coleman Jr. & the Founding of Forged By Fire",
   description:
-    "The story of Lt. Donald Coleman Jr. — a Springfield firefighter who lost his home to a 2022 fire and turned that loss into Forged By Fire.",
+    "The story of Lt. Donald Coleman Jr., a Springfield, Massachusetts firefighter who lost his home in a 2022 fire and spent 2.5 years restoring his grandparents' home — the foundation of Forged By Fire.",
+  alternates: { canonical: "/about" },
+  keywords: [
+    "Lt. Donald Coleman Jr. Springfield firefighter",
+    "Forged By Fire founder story",
+    "Springfield firefighter nonprofit founder",
+    "Donald Coleman Jr house fire 2022",
+    "Springfield MA firefighter",
+  ],
 };
 
 const restoration = [

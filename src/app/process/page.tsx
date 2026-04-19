@@ -7,9 +7,16 @@ import { Phone, PhoneCall, HandHeart, Heart, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Process | Forged By Fire",
+  title: "Our 4-Step Process — Fire Relief in Springfield, MA",
   description:
-    "Four steps, built around what Springfield families actually need in the first week after a fire. No red tape. No waiting.",
+    "How Forged By Fire responds to Springfield, Massachusetts house fires: Fire Department referral → 24-hour outreach → 48-hour emergency delivery → ongoing care and transitional housing. No red tape.",
+  alternates: { canonical: "/process" },
+  keywords: [
+    "Springfield house fire response process",
+    "Springfield Fire Department referral",
+    "48 hour fire relief Springfield",
+    "fire victim support timeline Springfield",
+  ],
 };
 
 const steps = [

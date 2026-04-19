@@ -6,9 +6,16 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | Forged By Fire",
+  title: "Contact — Emergency Help, Donate, Volunteer, Partner",
   description:
-    "Reach Forged By Fire — for emergency support after a Springfield house fire, to donate, to volunteer, or to partner.",
+    "Reach Forged By Fire in Springfield, Massachusetts for emergency support after a house fire, donations, volunteering, or partnership. Response within 24 hours — same-day for active emergencies.",
+  alternates: { canonical: "/contact" },
+  keywords: [
+    "Springfield house fire help contact",
+    "Forged By Fire contact",
+    "Springfield MA fire relief phone",
+    "emergency fire assistance Springfield contact",
+  ],
 };
 
 const info = [
