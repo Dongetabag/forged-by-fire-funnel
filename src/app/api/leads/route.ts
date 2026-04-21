@@ -161,8 +161,9 @@ export async function POST(request: Request) {
       });
     } catch (notifyErr) {
       console.error("Zoho notify send error:", notifyErr);
+      const errMsg = notifyErr instanceof Error ? notifyErr.message : String(notifyErr);
       return NextResponse.json(
-        { error: "Failed to send notification" },
+        { error: "Failed to send notification", detail: errMsg, host: SMTP_HOST, port: SMTP_PORT, user: SMTP_USER },
         { status: 500 }
       );
     }
