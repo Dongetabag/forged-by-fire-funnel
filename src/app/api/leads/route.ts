@@ -1,13 +1,29 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 import { insertLead } from "@/lib/insert-lead";
 
-function getResend() {
-  return new Resend(process.env.RESEND_API_KEY);
-}
-
+// Zoho SMTP configuration. Zoho Mail is the authoritative mailbox for
+// contact@theforgedbyfire.org — we send AS that address using an app password,
+// so inbound + outbound both live in the same Zoho inbox (ready for the
+// AI-monitoring integration later on).
+const SMTP_HOST = process.env.ZOHO_SMTP_HOST || "smtp.zoho.com";
+const SMTP_PORT = Number(process.env.ZOHO_SMTP_PORT || 465);
+const SMTP_USER = process.env.ZOHO_SMTP_USER || "contact@theforgedbyfire.org";
+const SMTP_PASS = process.env.ZOHO_SMTP_PASS || "";
 const NOTIFY_EMAIL = process.env.NOTIFY_EMAIL || "contact@theforgedbyfire.org";
-const FROM_EMAIL = process.env.FROM_EMAIL || "hello@theforgedbyfire.org";
+const FROM_NAME = "Forged By Fire";
+
+function getTransporter() {
+  return nodemailer.createTransport({
+    host: SMTP_HOST,
+    port: SMTP_PORT,
+    secure: SMTP_PORT === 465, // SSL on 465, STARTTLS on 587
+    auth: {
+      user: SMTP_USER,
+      pass: SMTP_PASS,
+    },
+  });
+}
 
 const INTEREST_LABEL: Record<string, string> = {
   "I need emergency help after a fire": "EMERGENCY SUPPORT REQUEST",
@@ -43,19 +59,30 @@ export async function POST(request: Request) {
       console.error("FBF lead insert error:", dbErr);
     }
 
-    const resend = getResend();
+    if (!SMTP_PASS) {
+      console.error("FBF: ZOHO_SMTP_PASS not set on Vercel");
+      return NextResponse.json(
+        { error: "Email service not configured" },
+        { status: 500 }
+      );
+    }
+
+    const transporter = getTransporter();
     const firstName = name.split(" ")[0];
     const badge = INTEREST_LABEL[interest] ?? "NEW INQUIRY";
     const isEmergency = interest.toLowerCase().includes("emergency");
 
-    // 1) Internal notification email
-    const { error: notifyError } = await resend.emails.send({
-      from: `Forged By Fire <${FROM_EMAIL}>`,
-      to: [NOTIFY_EMAIL],
-      replyTo: email,
-      subject: `${isEmergency ? "🔥 EMERGENCY " : ""}New ${badge.toLowerCase()}: ${name}`,
-      text: `New inquiry to Forged By Fire\n\nType: ${interest}\nName: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\nMessage: ${message || "(no note)"}\n\n${isEmergency ? "⚠️  EMERGENCY — respond within 24 hours (same-day if possible).\n\n" : ""}Reply to this email to contact ${firstName}.\n\n—\ntheforgedbyfire.org`,
-      html: `
+    const fromHeader = `"${FROM_NAME}" <${SMTP_USER}>`;
+
+    // 1) Internal notification into the Zoho inbox
+    try {
+      await transporter.sendMail({
+        from: fromHeader,
+        to: NOTIFY_EMAIL,
+        replyTo: `"${name}" <${email}>`,
+        subject: `${isEmergency ? "🔥 EMERGENCY " : ""}New ${badge.toLowerCase()}: ${name}`,
+        text: `New inquiry to Forged By Fire\n\nType: ${interest}\nName: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\nMessage: ${message || "(no note)"}\n\n${isEmergency ? "⚠️  EMERGENCY — respond within 24 hours (same-day if possible).\n\n" : ""}Reply to this email to contact ${firstName} directly.\n\n—\ntheforgedbyfire.org`,
+        html: `
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
@@ -130,29 +157,29 @@ export async function POST(request: Request) {
   </table>
 </body>
 </html>
-      `,
-    });
-
-    if (notifyError) {
-      console.error("Resend notify error:", notifyError);
+        `,
+      });
+    } catch (notifyErr) {
+      console.error("Zoho notify send error:", notifyErr);
       return NextResponse.json(
         { error: "Failed to send notification" },
         { status: 500 }
       );
     }
 
-    // 2) Confirmation email to the user
-    const { error: confirmError } = await resend.emails.send({
-      from: `Forged By Fire <${FROM_EMAIL}>`,
-      to: [email],
-      replyTo: NOTIFY_EMAIL,
-      subject: `We hear you, ${firstName}. Welcome to Forged By Fire.`,
-      headers: {
-        "X-Entity-Ref-ID": `fbf-confirm-${Date.now()}`,
-        "List-Unsubscribe": `<mailto:${NOTIFY_EMAIL}?subject=Unsubscribe>`,
-      },
-      text: `Thanks for reaching out, ${firstName}.\n\nWe've received your message and someone from the Forged By Fire team will respond within 24 hours — faster if this is an emergency after a house fire.\n\nYOUR REQUEST\nType: ${interest}\n${message ? `Note: ${message}\n` : ""}\nWHAT HAPPENS NEXT\n1. A member of our team reviews your request personally\n2. We reach out within 24 hours — same day for emergencies\n3. We connect you with the right resources and next steps\n\n"This is more than a project to me. This is personal. Forged By Fire was created so that others do not have to go through that journey alone." — Lt. Donald Coleman Jr., Founder\n\nEvery little bit counts.\n\n—\nForged By Fire\nSpringfield, MA\ntheforgedbyfire.org\n\nTo unsubscribe, reply with "Unsubscribe" in the subject line.`,
-      html: `
+    // 2) Confirmation email to the visitor
+    try {
+      await transporter.sendMail({
+        from: fromHeader,
+        to: email,
+        replyTo: NOTIFY_EMAIL,
+        subject: `We hear you, ${firstName}. Welcome to Forged By Fire.`,
+        headers: {
+          "X-Entity-Ref-ID": `fbf-confirm-${Date.now()}`,
+          "List-Unsubscribe": `<mailto:${NOTIFY_EMAIL}?subject=Unsubscribe>`,
+        },
+        text: `Thanks for reaching out, ${firstName}.\n\nWe've received your message and someone from the Forged By Fire team will respond within 24 hours, faster if this is an emergency after a house fire.\n\nYOUR REQUEST\nType: ${interest}\n${message ? `Note: ${message}\n` : ""}\nWHAT HAPPENS NEXT\n1. A member of our team reviews your request personally\n2. We reach out within 24 hours, same day for emergencies\n3. We connect you with the right resources and next steps\n\n"This is more than a project to me. This is personal. Forged By Fire was created so that others do not have to go through that journey alone." Lt. Donald Coleman Jr., Founder\n\nEvery little bit counts.\n\n—\nForged By Fire\nSpringfield, MA\ntheforgedbyfire.org\n\nTo unsubscribe, reply with "Unsubscribe" in the subject line.`,
+        html: `
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
@@ -179,7 +206,7 @@ export async function POST(request: Request) {
             We hear you, ${firstName}.
           </h1>
           <p style="margin: 0 0 28px 0; font-size: 15px; color: rgba(26,26,26,0.6); line-height: 1.7;">
-            Thank you for reaching out to Forged By Fire. Someone from our team will respond within 24 hours — faster if this is an emergency after a house fire.
+            Thank you for reaching out to Forged By Fire. Someone from our team will respond within 24 hours, faster if this is an emergency after a house fire.
           </p>
           <div style="height: 1px; background: rgba(26,26,26,0.08); margin-bottom: 28px;"></div>
           <p style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(26,26,26,0.42); font-weight: 500; margin: 0 0 16px 0;">
@@ -213,7 +240,7 @@ export async function POST(request: Request) {
                 <span style="display: inline-block; width: 24px; height: 24px; border-radius: 50%; background: rgba(232,93,35,0.12); text-align: center; line-height: 24px; font-size: 12px; color: #9B2F0A; font-weight: 600;">2</span>
               </td>
               <td style="padding: 8px 0; font-size: 14px; color: rgba(26,26,26,0.65); line-height: 1.6;">
-                We reach out within 24 hours &mdash; same-day for emergencies
+                We reach out within 24 hours, same-day for emergencies
               </td>
             </tr>
             <tr>
@@ -231,7 +258,7 @@ export async function POST(request: Request) {
               &ldquo;This is more than a project to me. This is personal. Forged By Fire was created so that others do not have to go through that journey alone.&rdquo;
             </p>
             <p style="font-size: 12px; color: rgba(26,26,26,0.45); margin: 0; letter-spacing: 0.5px; text-transform: uppercase;">
-              &mdash; Lt. Donald Coleman Jr., Founder
+              Lt. Donald Coleman Jr., Founder
             </p>
           </div>
           <table width="100%" cellpadding="0" cellspacing="0">
@@ -259,12 +286,11 @@ export async function POST(request: Request) {
   </table>
 </body>
 </html>
-      `,
-    });
-
-    if (confirmError) {
-      console.error("Resend confirmation error:", confirmError);
-      // Don't fail the request — internal notification already succeeded
+        `,
+      });
+    } catch (confirmErr) {
+      console.error("Zoho confirmation send error:", confirmErr);
+      // Don't fail the request: internal notification already succeeded
     }
 
     return NextResponse.json({ success: true });
