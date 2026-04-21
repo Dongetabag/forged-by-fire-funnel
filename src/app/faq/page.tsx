@@ -49,7 +49,7 @@ const categories = [
       {
         question: "Can I request transitional housing?",
         answer:
-          "Yes. transitional housing is available for families whose home is a total loss or uninhabitable after a fire. We have capacity for up to 5 families at a time. Apply via our Contact page and we'll assess need and fit.",
+          "Yes. transitional housing is available for families whose home is a total loss or uninhabitable after a fire. We have capacity for up to 3 families at a time. Apply via our Contact page and we'll assess need and fit.",
       },
     ],
   },

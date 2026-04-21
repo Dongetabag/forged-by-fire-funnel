@@ -29,12 +29,12 @@ const pillars = [
     description:
       "Our transitional housing program provides stable, supportive temporary shelter for families rebuilding after a fire, with case management, life-skills resources, and a path to permanent housing.",
     bullets: [
-      "Capacity for up to 5 families at a time",
+      "Capacity for up to 3 families at a time",
       "Case management and support services",
       "Life-skills and financial-literacy resources",
       "Structured transition into permanent housing",
     ],
-    stat: "5-family capacity",
+    stat: "3-family capacity",
     image: "/images/family-moving-in.jpg",
     cta: "Apply for Housing Support",
     ctaHref: "/contact",

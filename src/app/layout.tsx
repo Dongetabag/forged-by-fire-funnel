@@ -17,7 +17,7 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-const SITE_URL = "https://forgedbyfire.org";
+const SITE_URL = "https://theforgedbyfire.org";
 const SITE_NAME = "Forged By Fire";
 const LOCATION = "Springfield, Massachusetts";
 
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: "Forged By Fire | Springfield, MA Fire Relief Nonprofit",
-    template: "%s | Forged By Fire. Springfield, MA",
+    template: "%s | Forged By Fire (Springfield, MA)",
   },
   description:
     "Forged By Fire is a Springfield, Massachusetts nonprofit founded by firefighter Lt. Donald Coleman Jr. We deliver emergency support and transitional housing to Springfield families within 48 hours of a house fire. Every little bit counts.",
@@ -149,7 +149,7 @@ const structuredData = {
       ],
       knowsLanguage: "en",
       slogan: "Every Little Bit Counts",
-      email: "contact@forgedbyfire.org",
+      email: "contact@theforgedbyfire.org",
       sameAs: [
         // Fill these in once social profiles are live
       ],

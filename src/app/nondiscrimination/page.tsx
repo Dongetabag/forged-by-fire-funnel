@@ -28,7 +28,7 @@ No individual is denied service, employment, volunteer opportunity, or partnersh
   },
   {
     heading: "Services Based on Need",
-    body: `Emergency resources and transitional housing are allocated based on need. specifically, loss caused by a house fire in our service area. and on the capacity of our program. Requests that fall outside our mission (e.g., non-fire-related housing requests) are referred to appropriate partner organizations when possible.`,
+    body: `Emergency resources and transitional housing are allocated based on need: specifically, loss caused by a house fire in our service area, and on the capacity of our program. Requests that fall outside our mission (e.g., non-fire-related housing requests) are referred to appropriate partner organizations when possible.`,
   },
   {
     heading: "Safe Environment",
@@ -36,7 +36,7 @@ No individual is denied service, employment, volunteer opportunity, or partnersh
   },
   {
     heading: "Reporting Concerns",
-    body: `If you believe you have experienced or witnessed discrimination or harassment in connection with Forged By Fire, please contact us at contact@forgedbyfire.org. We take all reports seriously, will investigate in good faith, and will not retaliate against anyone who raises a concern in good faith.`,
+    body: `If you believe you have experienced or witnessed discrimination or harassment in connection with Forged By Fire, please contact us at contact@theforgedbyfire.org. We take all reports seriously, will investigate in good faith, and will not retaliate against anyone who raises a concern in good faith.`,
   },
   {
     heading: "Legal Basis",

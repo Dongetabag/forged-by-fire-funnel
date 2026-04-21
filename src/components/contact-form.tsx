@@ -109,10 +109,10 @@ export default function ContactForm() {
                 Email
               </p>
               <a
-                href="mailto:contact@forgedbyfire.org"
+                href="mailto:contact@theforgedbyfire.org"
                 className="text-[13px] font-medium text-[#1A1A1A] hover:text-[#E85D23] transition-colors"
               >
-                contact@forgedbyfire.org
+                contact@theforgedbyfire.org
               </a>
             </div>
           </div>

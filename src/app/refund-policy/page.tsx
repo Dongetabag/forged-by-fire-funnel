@@ -24,7 +24,7 @@ const sections = [
   },
   {
     heading: "How to Request a Refund",
-    body: `To request a refund, email contact@forgedbyfire.org with:
+    body: `To request a refund, email contact@theforgedbyfire.org with:
 
 • The date and amount of the donation
 • The last four digits of the card or account used (never the full number)
@@ -51,7 +51,7 @@ We acknowledge refund requests within 2 business days. Approved refunds typicall
   },
   {
     heading: "Contact",
-    body: `All refund requests and questions: contact@forgedbyfire.org.`,
+    body: `All refund requests and questions: contact@theforgedbyfire.org.`,
   },
 ];
 

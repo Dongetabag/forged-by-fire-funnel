@@ -10,7 +10,7 @@ import FaqChips from "./faq-chips";
 import ChatActions from "./chat-actions";
 
 const GREETING =
-  "Hi. I'm ATLAS, the intake assistant for Forged By Fire. We're a Springfield nonprofit supporting families affected by house fires. How can I help. emergency support, donating, volunteering, or something else?";
+  "Hi. I'm ATLAS, the intake assistant for Forged By Fire. We're a Springfield nonprofit supporting families affected by house fires. How can I help? Emergency support, donating, volunteering, or something else?";
 
 function makeMsg(role: ChatMessage["role"], content: string, extra?: Partial<ChatMessage>): ChatMessage {
   return { id: crypto.randomUUID(), role, content, timestamp: Date.now(), ...extra };
@@ -129,7 +129,7 @@ export default function ChatWidget() {
       });
     } catch {}
     const syntheticMsg = `[CONTACT_PROVIDED: name="${info.name}" email="${info.email}"]`;
-    setMessages((prev) => [...prev, makeMsg("system", `Thanks, ${info.name}. our team now has your info and will follow up within 24 hours.`)]);
+    setMessages((prev) => [...prev, makeMsg("system", `Thanks, , our team now has your info and will follow up within 24 hours.`)]);
     sendMessage(syntheticMsg, true);
   };
 
@@ -156,7 +156,7 @@ export default function ChatWidget() {
   };
 
   const downloadChat = () => {
-    const header = `ATLAS. Forged By Fire Chat Transcript\n${new Date().toLocaleDateString()}\nhttps://forgedbyfire.org\n${"=".repeat(50)}\n\n`;
+    const header = `ATLAS. Forged By Fire Chat Transcript\n${new Date().toLocaleDateString()}\nhttps://theforgedbyfire.org\n${"=".repeat(50)}\n\n`;
     const text = messages
       .filter((m) => m.role !== "system" || !m.content.startsWith("["))
       .map((m) => {

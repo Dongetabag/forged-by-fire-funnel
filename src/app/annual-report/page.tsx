@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Annual Report",
   description:
-    "Forged By Fire annual reports. families served, donations received, and program impact in Springfield, Massachusetts.",
+    "Forged By Fire annual reports: families served, donations received, and program impact in Springfield, Massachusetts.",
   alternates: { canonical: "/annual-report" },
   keywords: [
     "Forged By Fire annual report",

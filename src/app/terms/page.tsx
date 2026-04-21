@@ -16,7 +16,7 @@ const LAST_UPDATED = "April 19, 2026";
 const sections = [
   {
     heading: "1. Acceptance of Terms",
-    body: `By accessing or using the Forged By Fire website (forgedbyfire.org) or any service we provide, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree, please do not use the site.`,
+    body: `By accessing or using the Forged By Fire website (theforgedbyfire.org) or any service we provide, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree, please do not use the site.`,
   },
   {
     heading: "2. Who We Are",
@@ -28,7 +28,7 @@ const sections = [
   },
   {
     heading: "4. No Professional Advice",
-    body: `Information on this site. including pages about emergency response, housing, donations, and the founder's story. is provided for general informational purposes only. It is not legal, financial, medical, insurance, or professional advice. For specific situations, please consult the appropriate professional (insurance adjuster, attorney, healthcare provider, etc.).`,
+    body: `Information on this site (including pages about emergency response, housing, donations, and the founder's story) is provided for general informational purposes only. It is not legal, financial, medical, insurance, or professional advice. For specific situations, please consult the appropriate professional (insurance adjuster, attorney, healthcare provider, etc.).`,
   },
   {
     heading: "5. Donations",
@@ -64,7 +64,7 @@ const sections = [
   },
   {
     heading: "13. Contact",
-    body: `Questions about these Terms can be sent to contact@forgedbyfire.org or via our contact page.`,
+    body: `Questions about these Terms can be sent to contact@theforgedbyfire.org or via our contact page.`,
   },
 ];
 
@@ -77,7 +77,7 @@ export default function TermsPage() {
           label="Legal"
           title="Terms of"
           highlight="Service"
-          subtitle="The rules of the road for using forgedbyfire.org and the services we provide to Springfield, Massachusetts families."
+          subtitle="The rules of the road for using theforgedbyfire.org and the services we provide to Springfield, Massachusetts families."
         />
 
         <section className="py-16 md:py-20">

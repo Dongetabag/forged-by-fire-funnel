@@ -161,7 +161,7 @@ export default function DonatePage() {
           <div className="container-tight">
             <div className="grid lg:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
               <div className="img-card aspect-[4/5] relative">
-                <Image src="/images/before-after-4.jpg" alt="A home restored through the work of Forged By Fire" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+                <Image src="/images/family-rehoused.jpg" alt="A Springfield family rehoused through the work of Forged By Fire" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
               </div>
               <div>
                 <p className="text-[11px] tracking-widest uppercase text-[#E85D23] mb-4">

@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://forgedbyfire.org/sitemap.xml",
-    host: "https://forgedbyfire.org",
+    sitemap: "https://theforgedbyfire.org/sitemap.xml",
+    host: "https://theforgedbyfire.org",
   };
 }

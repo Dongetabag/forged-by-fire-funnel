@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Leadership & Board",
   description:
-    "Meet the leadership behind Forged By Fire. founder Lt. Donald Coleman Jr. and the team building a fire relief nonprofit in Springfield, Massachusetts.",
+    "Meet the leadership behind Forged By Fire: founder Lt. Donald Coleman Jr. and the team building a fire relief nonprofit in Springfield, Massachusetts.",
   alternates: { canonical: "/leadership" },
   keywords: [
     "Forged By Fire leadership",
@@ -81,7 +81,7 @@ export default function LeadershipPage() {
                   Donald leads Forged By Fire&apos;s day-to-day operations, the
                   partnership with the Springfield Fire Department, and the
                   intake of families following a fire. He is a firefighter first
-                  and a nonprofit leader second. the nonprofit exists because
+                  and a nonprofit leader second; the nonprofit exists because
                   he saw a gap no one else was filling.
                 </p>
                 <p>

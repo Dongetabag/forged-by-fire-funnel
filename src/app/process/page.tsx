@@ -64,7 +64,7 @@ const steps = [
     icon: Heart,
     title: "Ongoing Care & Transitional Housing",
     timeframe: "For as long as it takes",
-    long: "We follow up weekly. Families who need transitional housing can move into our unit, up to 5 families at a time, with case management and a clear path to permanent housing. Some families need a week. Others need six months. We stay until they're rebuilt.",
+    long: "We follow up weekly. Families who need transitional housing can move into our unit, up to 3 families at a time, with case management and a clear path to permanent housing. Some families need a week. Others need six months. We stay until they're rebuilt.",
     detail: [
       "Weekly check-ins and individualized support plan",
       "Transitional housing with case management",

@@ -55,11 +55,11 @@ const sections = [
   },
   {
     heading: "11. Answers to Questions",
-    body: `Every donor has the right to feel free to ask questions when making a donation and to receive prompt, truthful, and forthright answers. Email contact@forgedbyfire.org anytime. We respond within 24 hours.`,
+    body: `Every donor has the right to feel free to ask questions when making a donation and to receive prompt, truthful, and forthright answers. Email contact@theforgedbyfire.org anytime. We respond within 24 hours.`,
   },
   {
     heading: "Contact",
-    body: `Questions about donor rights, recognition preferences, or any aspect of your donation: contact@forgedbyfire.org.`,
+    body: `Questions about donor rights, recognition preferences, or any aspect of your donation: contact@theforgedbyfire.org.`,
   },
 ];
 
@@ -69,7 +69,7 @@ export default function DonorRightsPage() {
       label="Donor Rights"
       title="Donor Bill of"
       highlight="Rights"
-      subtitle="Every person who contributes to Forged By Fire has rights. transparency, choice, confidentiality, and respect. Here's our commitment to you."
+      subtitle="Every person who contributes to Forged By Fire has rights: transparency, choice, confidentiality, and respect. Here's our commitment to you."
       lastUpdated="April 19, 2026"
       sections={sections}
     />

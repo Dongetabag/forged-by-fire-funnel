@@ -26,7 +26,7 @@ const servicesFaqs = [
   {
     question: "What does Forged By Fire do for Springfield families after a house fire?",
     answer:
-      "We provide two pillars of support: (1) Emergency Resources. a $500 pre-loaded debit card, clothing, shoes, and essentials delivered within 48 hours of a house fire in Springfield, MA, and (2) Transitional Housing. safe temporary shelter for up to 5 families at a time with case management and a path to permanent housing.",
+      "We provide two pillars of support: (1) Emergency Resources. a $500 pre-loaded debit card, clothing, shoes, and essentials delivered within 48 hours of a house fire in Springfield, MA, and (2) Transitional Housing. safe temporary shelter for up to 3 families at a time with case management and a path to permanent housing.",
   },
   {
     question: "How fast does Forged By Fire respond after a Springfield house fire?",
@@ -64,7 +64,7 @@ const emergencyBullets = [
 ];
 
 const housingBullets = [
-  "Capacity for up to 5 families at a time in our transitional housing unit",
+  "Capacity for up to 3 families at a time in our transitional housing unit",
   "Case management: weekly check-ins and individualized support plans",
   "Life-skills and financial-literacy resources for long-term stability",
   "Structured transition into permanent housing, not a permanent stay",

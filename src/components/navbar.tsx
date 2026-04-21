@@ -42,19 +42,19 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#F5F0EA]/92 backdrop-blur-md border-b border-[#1A1A1A]/6">
       <nav className="container-tight">
-        <div className="flex items-center justify-between h-[80px]">
+        <div className="flex items-center justify-between h-[92px]">
           {/* Left. Logo + Nav Links */}
           <div className="flex items-center gap-10">
-            <a href="/" className="flex items-center gap-2.5 shrink-0">
+            <a href="/" className="flex items-center gap-3 shrink-0">
               <Image
                 src="/fbf-logo.png"
                 alt="Forged By Fire"
-                width={40}
-                height={40}
-                className="rounded-md"
+                width={64}
+                height={64}
+                className="rounded-md w-[56px] h-[56px] md:w-[64px] md:h-[64px]"
                 priority
               />
-              <span className="text-[15px] font-semibold tracking-tight text-[#1A1A1A] hidden sm:inline">
+              <span className="text-[16px] md:text-[17px] font-semibold tracking-tight text-[#1A1A1A]">
                 Forged By Fire
               </span>
             </a>

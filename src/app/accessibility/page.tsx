@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Accessibility Statement",
   description:
-    "Forged By Fire's commitment to accessibility. We aim to make forgedbyfire.org usable by everyone, including people with disabilities.",
+    "Forged By Fire's commitment to accessibility. We aim to make theforgedbyfire.org usable by everyone, including people with disabilities.",
   alternates: { canonical: "/accessibility" },
 };
 
@@ -15,7 +15,7 @@ const sections = [
   },
   {
     heading: "Standards We Follow",
-    body: `We design and build forgedbyfire.org with the following practices in mind:
+    body: `We design and build theforgedbyfire.org with the following practices in mind:
 
 • Semantic HTML and proper heading structure for screen-reader navigation
 • Sufficient color contrast between text and background
@@ -31,11 +31,11 @@ const sections = [
 
 • Some image descriptions may be brief. We welcome requests for more detailed descriptions of any image
 • Third-party embeds (chat assistant, payment processors once live) may have accessibility characteristics outside our direct control
-• Rich photography and motion may not be ideal for every accessibility need. reduced-motion preferences are respected where possible`,
+• Rich photography and motion may not be ideal for every accessibility need, and reduced-motion preferences are respected where possible`,
   },
   {
     heading: "If You Encounter a Barrier",
-    body: `If any part of forgedbyfire.org is not working for you. or if you need information in an alternative format. please email contact@forgedbyfire.org. We will respond within 2 business days and do our best to make the information available to you in a format you can use.`,
+    body: `If any part of theforgedbyfire.org is not working for you, or if you need information in an alternative format, please email contact@theforgedbyfire.org. We will respond within 2 business days and do our best to make the information available to you in a format you can use.`,
   },
   {
     heading: "Ongoing Improvement",
@@ -48,7 +48,7 @@ const sections = [
   },
   {
     heading: "Contact",
-    body: `Accessibility feedback, requests, or concerns: contact@forgedbyfire.org`,
+    body: `Accessibility feedback, requests, or concerns: contact@theforgedbyfire.org`,
   },
 ];
 
@@ -58,7 +58,7 @@ export default function AccessibilityPage() {
       label="Accessibility"
       title="Accessibility"
       highlight="Statement"
-      subtitle="Our commitment to making Forged By Fire's website and services usable by everyone. including people with disabilities."
+      subtitle="Our commitment to making Forged By Fire's website and services usable by everyone, including people with disabilities."
       lastUpdated="April 19, 2026"
       sections={sections}
     />

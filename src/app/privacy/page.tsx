@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Privacy Policy for Forged By Fire. how we collect, use, and protect information from donors, volunteers, and families we serve in Springfield, MA.",
+    "Privacy Policy for Forged By Fire: how we collect, use, and protect information from donors, volunteers, and families we serve in Springfield, MA.",
   alternates: { canonical: "/privacy" },
   robots: { index: true, follow: true },
 };
@@ -16,7 +16,7 @@ const LAST_UPDATED = "April 19, 2026";
 const sections = [
   {
     heading: "1. Who We Are",
-    body: `Forged By Fire is a nonprofit based in Springfield, Massachusetts. This Privacy Policy explains how we collect, use, and protect information from visitors, donors, volunteers, and the families we serve. It applies to forgedbyfire.org and to information we receive through our services.`,
+    body: `Forged By Fire is a nonprofit based in Springfield, Massachusetts. This Privacy Policy explains how we collect, use, and protect information from visitors, donors, volunteers, and the families we serve. It applies to theforgedbyfire.org and to information we receive through our services.`,
   },
   {
     heading: "2. Information We Collect",
@@ -26,7 +26,7 @@ const sections = [
 • Communication details: messages you send via forms, chatbot, or email
 • Volunteer information: skills, availability, background-check consent where required
 • Donor information: donation amount, payment method (processed by third-party payment processors), giving history
-• Family support details: household composition, needs, fire incident information. collected only when you're receiving services from us
+• Family support details: household composition, needs, fire incident information, collected only when you're receiving services from us
 
 We also collect limited technical information automatically:
 • Server logs (IP address, browser type, pages visited)
@@ -63,7 +63,7 @@ We also collect limited technical information automatically:
   },
   {
     heading: "7. Security",
-    body: `We use reasonable technical and organizational safeguards to protect information: encrypted connections (HTTPS), reputable third-party providers with security certifications, and internal access controls. No system is completely secure. If you believe your information has been compromised, contact us immediately at contact@forgedbyfire.org.`,
+    body: `We use reasonable technical and organizational safeguards to protect information: encrypted connections (HTTPS), reputable third-party providers with security certifications, and internal access controls. No system is completely secure. If you believe your information has been compromised, contact us immediately at contact@theforgedbyfire.org.`,
   },
   {
     heading: "8. Your Rights",
@@ -75,11 +75,11 @@ We also collect limited technical information automatically:
 • Opt out of communications (each email includes an unsubscribe option)
 • Withdraw consent for sharing with community partners at any time
 
-To exercise these rights, email contact@forgedbyfire.org.`,
+To exercise these rights, email contact@theforgedbyfire.org.`,
   },
   {
     heading: "9. Children's Information",
-    body: `Our site is not directed at children under 13, and we do not knowingly collect information from children under 13 without parental consent. When providing services to families, we may receive information about minors as part of household support. this is handled under "Sensitive Information" above.`,
+    body: `Our site is not directed at children under 13, and we do not knowingly collect information from children under 13 without parental consent. When providing services to families, we may receive information about minors as part of household support; this is handled under "Sensitive Information" above.`,
   },
   {
     heading: "10. Third-Party Services",
@@ -95,7 +95,7 @@ To exercise these rights, email contact@forgedbyfire.org.`,
   },
   {
     heading: "13. Contact Us",
-    body: `Questions or requests about privacy can be sent to contact@forgedbyfire.org. We respond within 24 hours for most inquiries.`,
+    body: `Questions or requests about privacy can be sent to contact@theforgedbyfire.org. We respond within 24 hours for most inquiries.`,
   },
 ];
 

@@ -14,9 +14,8 @@ import {
 } from "lucide-react";
 
 const trustMetrics = [
-  { value: "24 hr", label: "Response Time", icon: Flame },
   { value: "$500", label: "Emergency Debit Card", icon: Heart },
-  { value: "5", label: "Family Housing Capacity", icon: Home },
+  { value: "3", label: "Family Housing Capacity", icon: Home },
   { value: "2015", label: "Serving Springfield", icon: Users },
 ];
 
@@ -61,7 +60,7 @@ export default function Hero() {
     "w-full px-4 py-3 bg-white/85 border border-white/40 rounded-xl text-sm text-[#1A1A1A] placeholder:text-[#1A1A1A]/35 transition-all duration-300 focus:bg-white focus:border-[#E85D23]/40 focus:ring-0 outline-none";
 
   return (
-    <section id="top" className="relative pt-[80px]">
+    <section id="top" className="relative pt-[92px]">
       {/* Cover Card */}
       <div className="px-3 md:px-4 pt-3 md:pt-4">
         <motion.div
@@ -69,7 +68,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="relative w-full overflow-hidden rounded-[20px] md:rounded-[24px]"
-          style={{ minHeight: "calc(100vh - 104px)" }}
+          style={{ minHeight: "calc(100vh - 116px)" }}
         >
           {/* Ember-dark base background */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#1A0F08] via-[#2A1B12] to-[#0F0705]" />
@@ -101,7 +100,7 @@ export default function Hero() {
           {/* Content. split layout */}
           <div
             className="relative z-10 flex flex-col justify-between h-full"
-            style={{ minHeight: "calc(100vh - 104px)" }}
+            style={{ minHeight: "calc(100vh - 116px)" }}
           >
             {/* Top bar */}
             <motion.div

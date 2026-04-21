@@ -6,8 +6,8 @@ function getResend() {
   return new Resend(process.env.RESEND_API_KEY);
 }
 
-const NOTIFY_EMAIL = process.env.NOTIFY_EMAIL || "contact@forgedbyfire.org";
-const FROM_EMAIL = process.env.FROM_EMAIL || "hello@forgedbyfire.org";
+const NOTIFY_EMAIL = process.env.NOTIFY_EMAIL || "contact@theforgedbyfire.org";
+const FROM_EMAIL = process.env.FROM_EMAIL || "hello@theforgedbyfire.org";
 
 const INTEREST_LABEL: Record<string, string> = {
   "I need emergency help after a fire": "EMERGENCY SUPPORT REQUEST",
@@ -54,7 +54,7 @@ export async function POST(request: Request) {
       to: [NOTIFY_EMAIL],
       replyTo: email,
       subject: `${isEmergency ? "🔥 EMERGENCY " : ""}New ${badge.toLowerCase()}: ${name}`,
-      text: `New inquiry to Forged By Fire\n\nType: ${interest}\nName: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\nMessage: ${message || "(no note)"}\n\n${isEmergency ? "⚠️  EMERGENCY — respond within 24 hours (same-day if possible).\n\n" : ""}Reply to this email to contact ${firstName}.\n\n—\nforgedbyfire.org`,
+      text: `New inquiry to Forged By Fire\n\nType: ${interest}\nName: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\nMessage: ${message || "(no note)"}\n\n${isEmergency ? "⚠️  EMERGENCY — respond within 24 hours (same-day if possible).\n\n" : ""}Reply to this email to contact ${firstName}.\n\n—\ntheforgedbyfire.org`,
       html: `
 <!DOCTYPE html>
 <html>
@@ -120,7 +120,7 @@ export async function POST(request: Request) {
         <tr><td style="padding: 24px 0 0 0;">
           <table width="100%" cellpadding="0" cellspacing="0">
             <tr>
-              <td style="font-size: 11px; color: rgba(26,26,26,0.3); letter-spacing: 1px;">forgedbyfire.org</td>
+              <td style="font-size: 11px; color: rgba(26,26,26,0.3); letter-spacing: 1px;">theforgedbyfire.org</td>
               <td align="right" style="font-size: 11px; color: rgba(26,26,26,0.3); letter-spacing: 1px;">Landing Page Inquiry</td>
             </tr>
           </table>
@@ -151,7 +151,7 @@ export async function POST(request: Request) {
         "X-Entity-Ref-ID": `fbf-confirm-${Date.now()}`,
         "List-Unsubscribe": `<mailto:${NOTIFY_EMAIL}?subject=Unsubscribe>`,
       },
-      text: `Thanks for reaching out, ${firstName}.\n\nWe've received your message and someone from the Forged By Fire team will respond within 24 hours — faster if this is an emergency after a house fire.\n\nYOUR REQUEST\nType: ${interest}\n${message ? `Note: ${message}\n` : ""}\nWHAT HAPPENS NEXT\n1. A member of our team reviews your request personally\n2. We reach out within 24 hours — same day for emergencies\n3. We connect you with the right resources and next steps\n\n"This is more than a project to me. This is personal. Forged By Fire was created so that others do not have to go through that journey alone." — Lt. Donald Coleman Jr., Founder\n\nEvery little bit counts.\n\n—\nForged By Fire\nSpringfield, MA\nforgedbyfire.org\n\nTo unsubscribe, reply with "Unsubscribe" in the subject line.`,
+      text: `Thanks for reaching out, ${firstName}.\n\nWe've received your message and someone from the Forged By Fire team will respond within 24 hours — faster if this is an emergency after a house fire.\n\nYOUR REQUEST\nType: ${interest}\n${message ? `Note: ${message}\n` : ""}\nWHAT HAPPENS NEXT\n1. A member of our team reviews your request personally\n2. We reach out within 24 hours — same day for emergencies\n3. We connect you with the right resources and next steps\n\n"This is more than a project to me. This is personal. Forged By Fire was created so that others do not have to go through that journey alone." — Lt. Donald Coleman Jr., Founder\n\nEvery little bit counts.\n\n—\nForged By Fire\nSpringfield, MA\ntheforgedbyfire.org\n\nTo unsubscribe, reply with "Unsubscribe" in the subject line.`,
       html: `
 <!DOCTYPE html>
 <html>
@@ -236,7 +236,7 @@ export async function POST(request: Request) {
           </div>
           <table width="100%" cellpadding="0" cellspacing="0">
             <tr><td align="center">
-              <a href="https://forgedbyfire.org" style="display: inline-block; background: #E85D23; color: #fff; border-radius: 999px; padding: 12px 32px; font-size: 13px; font-weight: 600; text-decoration: none; letter-spacing: 0.5px;">
+              <a href="https://theforgedbyfire.org" style="display: inline-block; background: #E85D23; color: #fff; border-radius: 999px; padding: 12px 32px; font-size: 13px; font-weight: 600; text-decoration: none; letter-spacing: 0.5px;">
                 Every Little Bit Counts
               </a>
             </td></tr>
@@ -246,7 +246,7 @@ export async function POST(request: Request) {
           <table width="100%" cellpadding="0" cellspacing="0">
             <tr>
               <td style="font-size: 11px; color: rgba(26,26,26,0.3); letter-spacing: 1px;">
-                forgedbyfire.org &middot; Springfield, MA
+                theforgedbyfire.org &middot; Springfield, MA
               </td>
               <td align="right" style="font-size: 11px; color: rgba(26,26,26,0.3); letter-spacing: 1px;">
                 Confirmation

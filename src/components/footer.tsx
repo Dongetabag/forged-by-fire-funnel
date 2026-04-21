@@ -73,11 +73,11 @@ export default function Footer() {
               <span>Springfield, Massachusetts</span>
             </div>
             <a
-              href="mailto:contact@forgedbyfire.org"
+              href="mailto:contact@theforgedbyfire.org"
               className="flex items-center gap-1.5 text-[11px] text-[#1A1A1A]/45 hover:text-[#E85D23] transition-colors"
             >
               <Mail size={11} />
-              <span>contact@forgedbyfire.org</span>
+              <span>contact@theforgedbyfire.org</span>
             </a>
             <p className="text-[10px] text-[#1A1A1A]/30 mt-3 uppercase tracking-widest">
               Est. 2015 · 501(c)(3) Pending

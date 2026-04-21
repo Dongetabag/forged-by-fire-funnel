@@ -3,7 +3,6 @@ import Footer from "@/components/footer";
 import PageHero from "@/components/page-hero";
 import FounderStory from "@/components/founder-story";
 import WhyFbf from "@/components/why-fbf";
-import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -19,13 +18,6 @@ export const metadata: Metadata = {
     "Springfield MA firefighter",
   ],
 };
-
-const restoration = [
-  { src: "/images/before-after-1.jpg", caption: "The charred exterior became a bright blue home." },
-  { src: "/images/before-after-2.jpg", caption: "Two and a half years of restoration, rebuilt into shelter." },
-  { src: "/images/before-after-3.jpg", caption: "From total loss to a place families could call home." },
-  { src: "/images/before-after-4.jpg", caption: "The grandparents' home, reborn as a vessel for good." },
-];
 
 const timeline = [
   { year: "2015", title: "Firefighter since day one", desc: "Lt. Donald Coleman Jr. joined the Springfield Fire Department, dedicating his career to protecting others in their most vulnerable moments." },
@@ -70,51 +62,6 @@ export default function AboutPage() {
 
         {/* Full founder story (reuse existing component) */}
         <FounderStory />
-
-        {/* The house that started it all. restoration before/after */}
-        <section className="py-20 md:py-28 bg-[#F5F0EA]">
-          <div className="container-tight">
-            <div className="max-w-3xl mb-12">
-              <p className="text-[11px] tracking-widest uppercase text-[#E85D23] mb-4">
-                THE HOUSE THAT STARTED IT ALL
-              </p>
-              <h2 className="text-[28px] md:text-[40px] font-normal leading-[1.1] tracking-tight text-[#1A1A1A] mb-5">
-                Two and a half years of restoration.
-                <span className="block text-[#9B2F0A] mt-2">One vision of what a rebuilt home could mean.</span>
-              </h2>
-              <p className="text-[15px] text-[#1A1A1A]/65 leading-relaxed max-w-2xl">
-                Donald didn&apos;t just restore a building. He rebuilt the place where
-                generations of his family had been raised, and in doing it, he saw
-                what the home could become for others. This is the shift from
-                personal recovery to a nonprofit mission.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-4 md:gap-5">
-              {restoration.map((r) => (
-                <div key={r.src} className="card-light overflow-hidden">
-                  <div className="relative aspect-[3/4] bg-[#1A1A1A]">
-                    <Image
-                      src={r.src}
-                      alt={r.caption}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-5 md:p-6">
-                    <p className="text-[11px] uppercase tracking-widest text-[#E85D23] mb-1.5">
-                      BEFORE · AFTER
-                    </p>
-                    <p className="text-[14px] text-[#1A1A1A]/75 leading-relaxed">
-                      {r.caption}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Timeline */}
         <section className="py-20 md:py-28">

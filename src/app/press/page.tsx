@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Press & Media Kit",
   description:
-    "Press and media resources for Forged By Fire. boilerplate, founder bio, logo downloads, and media contact for Springfield, Massachusetts fire relief coverage.",
+    "Press and media resources for Forged By Fire: boilerplate, founder bio, logo downloads, and media contact for Springfield, Massachusetts fire relief coverage.",
   alternates: { canonical: "/press" },
   keywords: [
     "Forged By Fire press kit",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
 };
 
-const boilerplate = `Forged By Fire is a Springfield, Massachusetts nonprofit providing emergency resources and transitional housing to families affected by house fires. Founded in 2015 by Lt. Donald Coleman Jr., a Springfield firefighter who lost his home in a 2022 fire, the organization delivers a $500 emergency debit card and family essentials within 48 hours of a fire through a direct partnership with the Springfield Fire Department. Its transitional housing program supports up to five families at a time. Forged By Fire's 501(c)(3) status is pending. Learn more at forgedbyfire.org.`;
+const boilerplate = `Forged By Fire is a Springfield, Massachusetts nonprofit providing emergency resources and transitional housing to families affected by house fires. Founded in 2015 by Lt. Donald Coleman Jr., a Springfield firefighter who lost his home in a 2022 fire, the organization delivers a $500 emergency debit card and family essentials within 48 hours of a fire through a direct partnership with the Springfield Fire Department. Its transitional housing program supports up to five families at a time. Forged By Fire's 501(c)(3) status is pending. Learn more at theforgedbyfire.org.`;
 
 const shortBio = `Lt. Donald Coleman Jr. has served as a firefighter with the Springfield Fire Department since 2015. In 2022, a house fire destroyed his own home while he was away on vacation. He spent 2.5 years restoring his grandparents' home, a property that became the foundation of Forged By Fire, the nonprofit he founded to support Springfield families walking the same road he walked.`;
 
@@ -53,11 +53,11 @@ export default function PressPage() {
                 </p>
               </div>
               <a
-                href="mailto:press@forgedbyfire.org"
+                href="mailto:press@theforgedbyfire.org"
                 className="shrink-0 inline-flex items-center gap-2 px-6 py-3.5 bg-[#E85D23] hover:bg-[#C84914] text-white font-semibold rounded-full"
               >
                 <Mail size={15} />
-                press@forgedbyfire.org
+                press@theforgedbyfire.org
               </a>
             </div>
 
@@ -136,7 +136,7 @@ export default function PressPage() {
                 </a>
               </div>
               <p className="text-[12px] text-[#1A1A1A]/50 mt-4">
-                Additional asset requests (vector logos, b-roll, high-res photos). Email press@forgedbyfire.org.
+                Additional asset requests (vector logos, b-roll, high-res photos). Email press@theforgedbyfire.org.
               </p>
             </div>
 

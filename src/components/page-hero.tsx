@@ -14,7 +14,7 @@ interface PageHeroProps {
 
 export default function PageHero({ label, title, highlight, subtitle, image, imageAlt }: PageHeroProps) {
   return (
-    <section className="relative pt-[80px]">
+    <section className="relative pt-[92px]">
       <div className="px-3 md:px-4 pt-3 md:pt-4">
         <motion.div
           initial={{ opacity: 0, y: 16 }}

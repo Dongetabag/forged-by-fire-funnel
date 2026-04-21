@@ -1,7 +1,6 @@
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import FounderStory from "@/components/founder-story";
-import BeforeAfter from "@/components/before-after";
 import Services from "@/components/services";
 import HowItWorks from "@/components/how-it-works";
 import ImpactCalculator from "@/components/impact-calculator";
@@ -18,7 +17,6 @@ export default function Home() {
       <main>
         <Hero />
         <FounderStory />
-        <BeforeAfter />
         <Services />
         <HowItWorks />
         <ImpactCalculator />
