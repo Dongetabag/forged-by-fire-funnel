@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/process", priority: 0.8, changeFrequency: "monthly" as const },
     { url: "/who-we-help", priority: 0.8, changeFrequency: "monthly" as const },
     { url: "/donate", priority: 0.95, changeFrequency: "weekly" as const },
+    { url: "/d2v", priority: 0.95, changeFrequency: "weekly" as const },
     { url: "/volunteer", priority: 0.85, changeFrequency: "monthly" as const },
     { url: "/contact", priority: 0.85, changeFrequency: "monthly" as const },
     // Organizational & resources

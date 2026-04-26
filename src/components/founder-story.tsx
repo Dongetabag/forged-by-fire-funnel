@@ -5,11 +5,11 @@ import Image from "next/image";
 import { Flame, Quote } from "lucide-react";
 
 const photos = [
-  { src: "/images/photo-2.jpg", alt: "The night of the fire, 2022" },
-  { src: "/images/photo-3.jpg", alt: "Roof collapsed, sky visible through the rafters" },
-  { src: "/images/photo-1.jpg", alt: "Burned interior after the fire" },
-  { src: "/images/photo-5.jpg", alt: "Inside the home after the fire" },
-  { src: "/images/photo-4.jpg", alt: "Structural damage throughout the home" },
+  { src: "/images/real/pre-restoration.jpg", alt: "The grandparents' home — before restoration began" },
+  { src: "/images/real/interior-demo-1.jpg", alt: "Mid-renovation: gut to the studs" },
+  { src: "/images/real/interior-demo-3.jpg", alt: "Ceiling beams exposed during restoration" },
+  { src: "/images/real/mid-restoration-1.jpg", alt: "New siding going up during restoration" },
+  { src: "/images/real/restored-victorian-front.jpg", alt: "The fully restored home — now Forged By Fire's transitional housing unit" },
 ];
 
 export default function FounderStory() {
