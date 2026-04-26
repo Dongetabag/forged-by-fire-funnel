@@ -7,6 +7,7 @@ import { Home } from "lucide-react";
 const photos = [
   // Pre-restoration
   { src: "/images/real/pre-restoration.jpg", alt: "The Coleman home before restoration began", chapter: "Before" },
+  { src: "/images/real/pre-restoration-2.jpg", alt: "Front of the original Victorian, boarded up before work began", chapter: "Before" },
   // Demo phase
   { src: "/images/real/interior-demo-1.jpg", alt: "Demolition: walls torn out, exposed framing", chapter: "Demo" },
   { src: "/images/real/interior-demo-2.jpg", alt: "Drywall removed to expose original studs", chapter: "Demo" },
@@ -20,7 +21,6 @@ const photos = [
   // Restored
   { src: "/images/real/restored-side-2.jpg", alt: "Side angle of the restored home", chapter: "Restored" },
   { src: "/images/real/restored-side.jpg", alt: "Side elevation, fully restored", chapter: "Restored" },
-  { src: "/images/real/restored-victorian-day.jpg", alt: "Front of the restored Victorian on a clear day", chapter: "Restored" },
   { src: "/images/real/restored-victorian-front.jpg", alt: "The restored Victorian, front porch view", chapter: "Restored" },
   { src: "/images/real/restored-victorian-front-2.jpg", alt: "Porch and balcony detail on the restored home", chapter: "Restored" },
 ];
