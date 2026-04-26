@@ -35,7 +35,7 @@ const pillars = [
       "Structured transition into permanent housing",
     ],
     stat: "3-family capacity",
-    image: "/images/real/restored-victorian-front.jpg",
+    image: "/images/family-moving-in.jpg",
     cta: "Apply for Housing Support",
     ctaHref: "/contact",
   },
