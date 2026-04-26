@@ -15,6 +15,7 @@ const involvedLinks = [
   { label: "D2V (Direct 2 Victim)", href: "/d2v" },
   { label: "Volunteer", href: "/volunteer" },
   { label: "Donate Items", href: "/donate" },
+  { label: "Sponsor & Partner Report", href: "/sponsor" },
   { label: "Partner With Us", href: "/contact" },
 ];
 
