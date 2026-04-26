@@ -12,7 +12,7 @@ const servicesLinks = [
 
 const involvedLinks = [
   { label: "Donate", href: "/donate" },
-  { label: "D2V — Direct-2-Victim", href: "/d2v" },
+  { label: "D2V (Direct 2 Victim)", href: "/d2v" },
   { label: "Volunteer", href: "/volunteer" },
   { label: "Donate Items", href: "/donate" },
   { label: "Partner With Us", href: "/contact" },

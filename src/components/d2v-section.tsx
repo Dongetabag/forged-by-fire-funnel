@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Heart, Shield, Zap, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Heart, Shield, Zap, ArrowRight } from "lucide-react";
 
 const principles = [
   {
@@ -22,15 +22,15 @@ const principles = [
     icon: Zap,
     title: "Continuous reload",
     description:
-      "As donations keep coming in, we keep loading the card — even after the initial $500 emergency package. No 'pledge' delays. Real money, real time.",
+      "As donations keep coming in, we keep loading the card, even after the initial $500 emergency package. No pledge delays. Real money, real time.",
   },
 ];
 
 const flow = [
-  { step: "01", title: "A Springfield fire happens", desc: "Springfield Fire Department refers the family to Forged By Fire — same day." },
-  { step: "02", title: "We launch a D2V campaign", desc: "Within 24 hours we publish a verified, family-specific campaign with the case details we're authorized to share." },
-  { step: "03", title: "Community gives directly", desc: "Neighbors, family, the broader Springfield community can donate to that exact incident — not a general fund." },
-  { step: "04", title: "Card gets loaded — and reloaded", desc: "Funds load onto the family's reloadable debit card the same day. As more donations come in, the card keeps growing." },
+  { step: "01", title: "A Springfield fire happens", desc: "Springfield Fire Department refers the family to Forged By Fire the same day." },
+  { step: "02", title: "We launch a D2V campaign", desc: "Within 24 hours we publish a verified, family-specific campaign with the case details we are authorized to share." },
+  { step: "03", title: "Community gives directly", desc: "Neighbors, family, and the broader Springfield community can donate to that exact incident, not a general fund." },
+  { step: "04", title: "Card gets loaded, and reloaded", desc: "Funds load onto the family's reloadable debit card the same day. As more donations come in, the card keeps growing." },
 ];
 
 export default function D2vSection() {
@@ -47,18 +47,18 @@ export default function D2vSection() {
         >
           <span className="pill-ember mb-5">
             <Heart size={12} />
-            INTRODUCING D2V · DIRECT-2-VICTIM
+            INTRODUCING D2V (DIRECT 2 VICTIM)
           </span>
           <h2 className="text-[28px] md:text-[44px] font-normal leading-[1.08] tracking-tight text-[#1A1A1A] mb-6">
             When a Springfield family loses their home,
             <span className="block text-[#9B2F0A] mt-2">they shouldn&apos;t have to launch a GoFundMe.</span>
           </h2>
           <p className="text-[16px] text-[#1A1A1A]/70 leading-relaxed max-w-2xl">
-            D2V is a fundraising mechanism unique to Forged By Fire. Each verified
-            fire becomes its own campaign. Neighbors and the wider community can
-            donate directly to that specific family — not a general pool.
-            100% of those donations load onto the family&apos;s debit card in
-            real time.
+            D2V is a fundraising mechanism unique to Forged By Fire. Each
+            verified fire becomes its own campaign. Neighbors and the wider
+            community can donate directly to that specific family, not a
+            general pool. 100% of those donations load onto the family&apos;s
+            debit card in real time.
           </p>
         </motion.div>
 
@@ -94,15 +94,15 @@ export default function D2vSection() {
               Like a GoFundMe, but the family doesn&apos;t lift a finger.
             </h3>
             <p className="text-[15px] text-[#1A1A1A]/70 leading-relaxed mb-4">
-              In the moment after a fire, families are processing trauma — not
-              opening a fundraising account, finding photos to upload, writing
-              copy, and chasing shares. The ones who need help most are the
-              least equipped to ask for it.
+              In the moment after a fire, families are processing trauma. They
+              are not opening a fundraising account, finding photos to upload,
+              writing copy, and chasing shares. The ones who need help most
+              are the least equipped to ask for it.
             </p>
             <p className="text-[15px] text-[#1A1A1A]/70 leading-relaxed">
               Forged By Fire publishes the campaign for them. With consent, we
-              share the verified facts. The community gives. We load the card.
-              The family gets to focus on what matters.
+              share the verified facts. The community gives. We load the
+              card. The family gets to focus on what matters.
             </p>
           </div>
         </motion.div>

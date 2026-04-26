@@ -4,16 +4,16 @@ import PageHero from "@/components/page-hero";
 import FaqSchema from "@/components/faq-schema";
 import Image from "next/image";
 import Link from "next/link";
-import { Heart, Shield, Zap, CheckCircle2, Users, ArrowRight, Eye } from "lucide-react";
+import { Heart, Shield, Zap, Users, ArrowRight, Eye } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "D2V — Direct-2-Victim Fire Relief Fundraising in Springfield, MA",
+  title: "D2V (Direct 2 Victim) Fire Relief Fundraising in Springfield, MA",
   description:
-    "D2V (Direct-2-Victim) is Forged By Fire's verified, fire-by-fire campaign system. When a Springfield, MA family loses their home, the community can fund their reloadable debit card directly — without the family having to launch their own GoFundMe.",
+    "D2V (Direct 2 Victim) is Forged By Fire's verified, fire-by-fire campaign system. When a Springfield, MA family loses their home, the community can fund their reloadable debit card directly, without the family having to launch their own GoFundMe.",
   alternates: { canonical: "/d2v" },
   keywords: [
-    "Direct-2-Victim Springfield",
+    "Direct 2 Victim Springfield",
     "D2V fire relief",
     "Springfield house fire fundraising",
     "fire victim debit card Springfield",
@@ -28,32 +28,32 @@ const d2vFaqs = [
   {
     question: "What does D2V stand for?",
     answer:
-      "D2V stands for Direct-2-Victim. It's Forged By Fire's fundraising mechanism that lets the Springfield community donate directly to a specific verified fire incident — not a general fund. 100% of D2V donations are loaded onto the affected family's reloadable debit card.",
+      "D2V stands for Direct 2 Victim. It is Forged By Fire's fundraising mechanism that lets the Springfield community donate directly to a specific verified fire incident, not a general fund. 100% of D2V donations are loaded onto the affected family's reloadable debit card.",
   },
   {
     question: "How is D2V different from a GoFundMe?",
     answer:
-      "On a GoFundMe, the affected family has to set up the campaign, write the story, find photos, and promote it — in the middle of the worst week of their life. With D2V, Forged By Fire publishes the verified campaign on the family's behalf, with their consent. The family doesn't lift a finger; the community gives; we load the card.",
+      "On a GoFundMe, the affected family has to set up the campaign, write the story, find photos, and promote it during the worst week of their life. With D2V, Forged By Fire publishes the verified campaign on the family's behalf, with their consent. The family does not lift a finger. The community gives. We load the card.",
   },
   {
     question: "How is each D2V campaign verified?",
     answer:
-      "Every D2V campaign is tied to a fire incident verified by the Springfield Fire Department or our direct intake. We do not run general-fund campaigns under D2V — only specific, real, recent residential fires.",
+      "Every D2V campaign is tied to a fire incident verified by the Springfield Fire Department or our direct intake. We do not run general-fund campaigns under D2V. Only specific, real, recent residential fires.",
   },
   {
     question: "Where exactly does the money go?",
     answer:
-      "100% of D2V donations are loaded onto a reloadable debit card issued to the affected family. The family uses it for whatever they need first — food, clothes, prescriptions, hotel, transportation. Operations and admin for Forged By Fire are funded separately, never from D2V donations.",
+      "100% of D2V donations are loaded onto a reloadable debit card issued to the affected family. The family uses it for whatever they need first, including food, clothes, prescriptions, hotel, and transportation. Operations and admin for Forged By Fire are funded separately, never from D2V donations.",
   },
   {
     question: "What happens if more donations come in than the family needs?",
     answer:
-      "We keep loading the card as donations come in. There's no cap. If a family stabilizes faster than expected, we communicate with the family and donors and, where appropriate, redirect surplus to other open D2V campaigns or to Forged By Fire's transitional housing program — always disclosed transparently.",
+      "We keep loading the card as donations come in. There is no cap. If a family stabilizes faster than expected, we communicate with the family and donors and, where appropriate, redirect surplus to other open D2V campaigns or to Forged By Fire's transitional housing program. Every redirection is disclosed transparently.",
   },
   {
     question: "Is my D2V donation tax-deductible?",
     answer:
-      "Forged By Fire's 501(c)(3) status is currently pending. Once approved, D2V donations will be tax-deductible to the extent allowed by law and we'll issue receipts. Until then, donors should not assume deductibility.",
+      "Forged By Fire's 501(c)(3) status is currently pending. Once approved, D2V donations will be tax-deductible to the extent allowed by law and we will issue receipts. Until then, donors should not assume deductibility.",
   },
   {
     question: "Can I refer a Springfield family who just had a fire?",
@@ -67,28 +67,28 @@ const flow = [
     number: "01",
     icon: Shield,
     title: "Verified incident",
-    long: "A residential fire occurs in Springfield. The Springfield Fire Department's PIO refers the family to Forged By Fire — usually the same day. Or a neighbor, church, or partner organization makes the referral, and we confirm the incident with the SFD.",
+    long: "A residential fire occurs in Springfield. The Springfield Fire Department's PIO refers the family to Forged By Fire, usually the same day. Or a neighbor, church, or partner organization makes the referral, and we confirm the incident with the SFD.",
     detail: "Same day",
   },
   {
     number: "02",
     icon: Users,
-    title: "Family consent + verified facts",
-    long: "Within 24 hours we contact the family. We listen, we document the basic case-specific facts they're comfortable sharing publicly (or anonymously if they prefer), and we get explicit consent before publishing any campaign details.",
+    title: "Family consent and verified facts",
+    long: "Within 24 hours we contact the family. We listen, we document the basic case-specific facts they are comfortable sharing publicly (or anonymously if they prefer), and we get explicit consent before publishing any campaign details.",
     detail: "Within 24 hours",
   },
   {
     number: "03",
     icon: Heart,
     title: "Campaign goes live",
-    long: "We publish a verified D2V campaign tied to that specific fire. The community can donate directly to it. Neighbors, family, the broader Springfield community, anyone moved to act — they all give to that exact family, not a general fund.",
+    long: "We publish a verified D2V campaign tied to that specific fire. The community can donate directly to it. Neighbors, family, the broader Springfield community, and anyone moved to act can give to that exact family, not a general fund.",
     detail: "Within 48 hours",
   },
   {
     number: "04",
     icon: Zap,
-    title: "Card loaded — and reloaded",
-    long: "Donations load onto a reloadable debit card issued to the family. The first $500 (our standard emergency package) hits same-day. Every additional dollar that comes in keeps loading the card. The family uses it for whatever matters most, in real time.",
+    title: "Card loaded and reloaded",
+    long: "Donations load onto a reloadable debit card issued to the family. The first $500 (our standard emergency package) hits the same day. Every additional dollar that comes in keeps loading the card. The family uses it for whatever matters most, in real time.",
     detail: "Real-time, continuous",
   },
 ];
@@ -100,12 +100,13 @@ export default function D2vPage() {
       <FaqSchema id="d2v" faqs={d2vFaqs} />
       <main>
         <PageHero
-          label="D2V · Direct-2-Victim"
+          label="D2V (Direct 2 Victim)"
           title="One verified fire."
           highlight="One direct campaign. 100% to the family."
-          subtitle="D2V is the fundraising mechanism unique to Forged By Fire. Like a GoFundMe — except the Springfield, MA family doesn't have to launch it themselves."
+          subtitle="D2V is the fundraising mechanism unique to Forged By Fire. Like a GoFundMe, except the Springfield, MA family does not have to launch it themselves."
           image="/images/real/fire-scene-springfield.jpg"
           imageAlt="Springfield Fire Department responding to a residential fire"
+          hideStatusDot
         />
 
         {/* Why this exists */}
@@ -117,23 +118,23 @@ export default function D2vPage() {
                   WHY D2V EXISTS
                 </p>
                 <h2 className="text-[28px] md:text-[36px] font-normal tracking-tight text-[#1A1A1A] mb-5 leading-[1.15]">
-                  Trauma + a fundraising platform isn&apos;t a model.
+                  Trauma plus a fundraising platform is not a model.
                 </h2>
                 <p className="text-[15px] text-[#1A1A1A]/70 leading-relaxed mb-4">
                   In the days after losing a home to fire, families are dealing
                   with displacement, insurance, kids, medical follow-ups, and
                   shock. Asking them to write GoFundMe copy, upload photos of
-                  their burned house, and chase social-media shares is —
-                  honestly — cruel.
+                  their burned house, and chase social-media shares is,
+                  honestly, cruel.
                 </p>
                 <p className="text-[15px] text-[#1A1A1A]/70 leading-relaxed mb-4">
                   But the community wants to give. Neighbors will write a check
-                  the same day if they know exactly where it&apos;s going.
-                  We saw the gap. D2V closes it.
+                  the same day if they know exactly where it is going. We saw
+                  the gap. D2V closes it.
                 </p>
                 <p className="text-[15px] text-[#1A1A1A]/70 leading-relaxed">
-                  We do the campaign work — the verification, the publishing,
-                  the consent, the disbursement — so the family can do the work
+                  We do the campaign work (the verification, the publishing,
+                  the consent, the disbursement) so the family can do the work
                   that matters: rebuilding their life.
                 </p>
               </div>
@@ -158,7 +159,7 @@ export default function D2vPage() {
                 THE D2V FLOW
               </p>
               <h2 className="text-[28px] md:text-[36px] font-normal tracking-tight text-[#1A1A1A] leading-[1.15]">
-                From incident to relief — four steps.
+                From incident to relief, four steps.
               </h2>
             </div>
 
@@ -211,18 +212,18 @@ export default function D2vPage() {
                 },
                 {
                   icon: Heart,
-                  title: "100% to the family — period",
+                  title: "100% to the family. Period.",
                   desc: "Every dollar donated to a D2V campaign loads onto that family's debit card. Nothing comes off the top. Operations are funded separately.",
                 },
                 {
                   icon: Eye,
                   title: "Family consent, public reporting",
-                  desc: "We never publish details a family hasn't approved. Once a campaign closes, we publish the totals raised + delivered (anonymously if requested).",
+                  desc: "We never publish details a family has not approved. Once a campaign closes, we publish the totals raised and delivered (anonymously if requested).",
                 },
                 {
                   icon: Zap,
                   title: "Real time, real money",
-                  desc: "Card loads same-day. No 'pledge' delays. As donations keep arriving, we keep reloading. The card grows with the community's response.",
+                  desc: "Card loads same-day. No pledge delays. As donations keep arriving, we keep reloading. The card grows with the community's response.",
                 },
               ].map((p) => (
                 <div key={p.title} className="card-light p-7">
@@ -243,7 +244,7 @@ export default function D2vPage() {
             <div className="text-center mb-12">
               <p className="text-[11px] tracking-widest uppercase text-[#E85D23] mb-4">D2V FAQ</p>
               <h2 className="text-[28px] md:text-[36px] font-normal tracking-tight text-[#1A1A1A] leading-[1.15]">
-                Common questions about Direct-2-Victim.
+                Common questions about Direct 2 Victim.
               </h2>
             </div>
 
@@ -275,7 +276,7 @@ export default function D2vPage() {
               When the next Springfield fire happens, the campaign goes live within 48 hours.
             </h3>
             <p className="text-[15px] text-white/65 mb-6">
-              Subscribe to be notified when D2V campaigns open — or refer a family we should reach.
+              Subscribe to be notified when D2V campaigns open, or refer a family we should reach.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link

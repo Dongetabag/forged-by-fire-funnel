@@ -10,9 +10,10 @@ interface PageHeroProps {
   subtitle?: string;
   image?: string;
   imageAlt?: string;
+  hideStatusDot?: boolean;
 }
 
-export default function PageHero({ label, title, highlight, subtitle, image, imageAlt }: PageHeroProps) {
+export default function PageHero({ label, title, highlight, subtitle, image, imageAlt, hideStatusDot }: PageHeroProps) {
   return (
     <section className="relative pt-[92px]">
       <div className="px-3 md:px-4 pt-3 md:pt-4">
@@ -46,7 +47,7 @@ export default function PageHero({ label, title, highlight, subtitle, image, ima
           <div className="relative z-10 container-tight h-full flex items-end pb-12 md:pb-16 pt-24 md:pt-28">
             <div className="max-w-3xl">
               <p className="inline-flex items-center gap-2 text-[11px] uppercase tracking-widest text-[#F59E0B] mb-5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#E85D23] ember-flicker" />
+                {!hideStatusDot && <span className="w-1.5 h-1.5 rounded-full bg-[#E85D23] ember-flicker" />}
                 {label}
               </p>
               <h1 className="text-[clamp(2.4rem,5.5vw,4rem)] font-normal tracking-tight leading-[1.06] text-white mb-4">

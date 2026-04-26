@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import PageHero from "@/components/page-hero";
 import FounderStory from "@/components/founder-story";
+import ColemanHome from "@/components/coleman-home";
 import WhyFbf from "@/components/why-fbf";
 import type { Metadata } from "next";
 
@@ -62,6 +63,9 @@ export default function AboutPage() {
 
         {/* Full founder story (reuse existing component) */}
         <FounderStory />
+
+        {/* Coleman Home: flagship home narrative + restoration gallery */}
+        <ColemanHome />
 
         {/* Timeline */}
         <section className="py-20 md:py-28">
